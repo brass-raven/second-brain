@@ -12,6 +12,8 @@ order:
 
 While learning how to turn notes into charts (more on that in a future release) I stumbled upon [[View/Documentation/Plugins Dataview#Views|Dataview Plugin Views]]. Dataview Views (not to be confused with the [[View/Documentation/Folders Class#View|View Class]]) can be used to reuse the same query on multiple notes in a far more efficient way than the method I was using and they work on mobile devices!
 
+If you want to see the specific files that were changed, the check out the [release 1.1.2 pull request](https://github.com/brass-raven/second-brain/pull/3).
+
 ## Changes
 
 - Add `subview-table` Dataview View to find all [[View/Documentation/Folders Class#View|Views]] under a [[View/Documentation/Folders Class#Parent View|Parent View]].
@@ -28,6 +30,7 @@ While learning how to turn notes into charts (more on that in a future release) 
 - Renamed `Release Log` to [[View/Documentation/Release Notes|Release Notes]] and split release notes up by version into their own notes like the one you are presently reading.
 - Added [[View/Documentation/Upgrading Versions|Upgrading Versions]] notes.
 - Add a [[View/Documentation/Layout#Bookmarks|Bookmark]] to display a color grouped [[View/Documentation/Hotkeys#^graphView|Graph View]] with the [[View/Documentation/Folders Core|Core Folder]] notes filtered out.
+- Add [[View/Note/Take Notes|Take Notes]] to [[View/Note/Home|Home]] for easier access.
 - Remove `Sandbox` note.
 - Improve `task-table` searches to display items if their `prior` note is [[View/Documentation/Metadata#Abandoned Tag|Abandoned]].
 - Add `tags` property to [[Core/Template/Meeting Template|Meeting Template]].

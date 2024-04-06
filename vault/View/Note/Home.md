@@ -8,6 +8,7 @@ order:
 ## Quick Links
 
 - `= "[[Database/DailyNote/" + dateformat(date(today), "yyyy-MM-dd") + "|Today's Note]]"`.
+- [[View/Note/Take Notes|Take Notes]].
 
 # Subviews
 
