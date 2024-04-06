@@ -1,10 +1,9 @@
 ---
 aliases:
-  - Top Dialogs
-  - Top Quotes
+  - Top YouTube Channels
 class: View
 from:
-  - "[[View/Note/Dialog|Dialog]]"
+  - "[[View/Note/YouTube|YouTube]]"
 order:
 queryConfig:
   page:
@@ -26,18 +25,18 @@ const start = pageSize * (page.number ?? 0);
 
 dv.table(
   [
+    "Cover",
     "Name",
-    "Speakers",
     "Rating"
   ],
-  dv.pages('"Database/Dialog"').sort((page) => {
+  dv.pages('"Database/YouTubeChannel"').sort((page) => {
     return page.ratingsDme;
   }, 'desc').slice(
     start,
     start + pageSize
   ).map((page) => [
+    `![|100](${page.cover})`,
     page.file.link,
-    metadataMenuApi.fieldModifier(dv, page, 'speakers'),
     metadataMenuApi.fieldModifier(dv, page, 'ratingsDme')
   ])
 );

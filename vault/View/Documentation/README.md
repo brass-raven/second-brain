@@ -22,3 +22,5 @@ If you would prefer to read about everything prior to diving in, then I recommen
 * [[View/Documentation/Plugins|Plugins documentation]] will show you what the various plugins do so you will know where different features are configured.
 * [[View/Documentation/Tips and Tricks|Tips and Tricks]] holds recommendations to make your experience better.
 * [[View/Documentation/Known Issues|Known issues]] is a good first step to troubleshooting any problems you run into.
+* [[View/Documentation/Release Notes|Release Notes]] is documentation on what changed each version.
+* [[View/Documentation/Upgrading Versions|Upgrading Versions]] is documentation on steps you should take when upgrading from one version to the next.

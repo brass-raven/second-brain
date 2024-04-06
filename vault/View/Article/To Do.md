@@ -1,9 +1,9 @@
 ---
 aliases:
-  - Book Series To Read
+  - Articles To Read
 class: View
 from:
-  - "[[View/Note/Book|Book]]"
+  - "[[View/Note/Article|Article]]"
 order: 
 queryConfig:
   columns:
@@ -11,7 +11,7 @@ queryConfig:
     priority: true
     status: true
   filterType: To Do
-  folder: Database/BookSeries
+  folder: Database/Article
   page:
     size: 25
 ---

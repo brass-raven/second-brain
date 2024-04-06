@@ -1,19 +1,19 @@
 ---
 aliases:
-  - Book Series To Read
+  - Abandoned Video Game Series
 class: View
 from:
-  - "[[View/Note/Book|Book]]"
+  - "[[View/Note/VideoGame|VideoGame]]"
 order: 
 queryConfig:
   columns:
     internalRating: ratingsDme
     priority: true
     status: true
-  filterType: To Do
-  folder: Database/BookSeries
+  filterType: Abandoned
+  folder: Database/VideoGameSeries
   page:
-    size: 25
+    size: 100
 ---
 # Notes
 

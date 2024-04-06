@@ -1,19 +1,18 @@
 ---
 aliases:
-  - Book Series To Read
+  - Top Articles
 class: View
 from:
-  - "[[View/Note/Book|Book]]"
+  - "[[View/Note/Article|Article]]"
 order: 
 queryConfig:
   columns:
+    externalRating: ratingsGoodreads
     internalRating: ratingsDme
-    priority: true
-    status: true
-  filterType: To Do
-  folder: Database/BookSeries
+  filterType: Top
+  folder: Database/Article
   page:
-    size: 25
+    size: 100
 ---
 # Notes
 

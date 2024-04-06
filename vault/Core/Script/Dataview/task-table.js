@@ -1,29 +1,50 @@
 "use strict";
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// src/scripts/Dataview/utilities.ts
-var utilities_exports = {};
-__export(utilities_exports, {
-  getTable: () => getTable,
-  getTaskTable: () => getTaskTable
-});
-module.exports = __toCommonJS(utilities_exports);
+// src/libs/string/convert-case.ts
+function convertCase(value, convertType) {
+  const valueArray = value.replace(
+    /[^a-zA-Z0-9\n]|([a-z])(?=[A-Z])|(\D)(?=\d)|(\d)(?=\D)/g,
+    "$1$2$3 "
+  ).trim().toLowerCase().split(/\s+/);
+  switch (convertType) {
+    case "camel" /* camel */: {
+      const words = titleCaseWords(valueArray);
+      return [words[0]?.toLowerCase(), ...words.slice(1)].join("");
+    }
+    case "kebab" /* kebab */:
+      return valueArray.join("-");
+    case "pascal" /* pascal */:
+      return titleCaseWords(valueArray).join("");
+    case "snake" /* snake */:
+      return valueArray.join("_");
+    case "title" /* title */:
+      return titleCaseWords(valueArray).join(" ");
+    default: {
+      const invalidType = convertType;
+      throw new Error(`incorrect case type '${invalidType}'`);
+    }
+  }
+}
+function titleCaseWords(words) {
+  return words.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
+}
+
+// src/libs/obsidian/constants/task-status.ts
+var TaskStatus = /* @__PURE__ */ ((TaskStatus2) => {
+  TaskStatus2["blocked"] = "Blocked";
+  TaskStatus2["done"] = "Done";
+  TaskStatus2["inProgress"] = "In Progress";
+  TaskStatus2["toDo"] = "To Do";
+  return TaskStatus2;
+})(TaskStatus || {});
+
+// src/libs/obsidian/get-task-state.ts
+var taskStatusConfig = {
+  label: "Status (null to pick on add)",
+  options: Object.values(TaskStatus).concat("null"),
+  type: "dropdown" /* dropdown */,
+  value: "null"
+};
 
 // src/libs/dataview/query-notes.ts
 function queryNotes(dataviewApi, {
@@ -63,9 +84,9 @@ function queryNotes(dataviewApi, {
 // src/libs/dataview/get-table.ts
 async function getTable(dataviewApi, {
   columns,
-  ...queryConfig
+  ...queryConfig2
 }) {
-  const pages = queryNotes(dataviewApi, queryConfig);
+  const pages = queryNotes(dataviewApi, queryConfig2);
   dataviewApi.table(
     columns.map((column) => {
       return column.title;
@@ -79,52 +100,6 @@ async function getTable(dataviewApi, {
     )
   );
 }
-
-// src/libs/obsidian/constants/task-status.ts
-var TaskStatus = /* @__PURE__ */ ((TaskStatus2) => {
-  TaskStatus2["blocked"] = "Blocked";
-  TaskStatus2["done"] = "Done";
-  TaskStatus2["inProgress"] = "In Progress";
-  TaskStatus2["toDo"] = "To Do";
-  return TaskStatus2;
-})(TaskStatus || {});
-
-// src/libs/string/convert-case.ts
-function convertCase(value, convertType) {
-  const valueArray = value.replace(
-    /[^a-zA-Z0-9\n]|([a-z])(?=[A-Z])|(\D)(?=\d)|(\d)(?=\D)/g,
-    "$1$2$3 "
-  ).trim().toLowerCase().split(/\s+/);
-  switch (convertType) {
-    case "camel" /* camel */: {
-      const words = titleCaseWords(valueArray);
-      return [words[0]?.toLowerCase(), ...words.slice(1)].join("");
-    }
-    case "kebab" /* kebab */:
-      return valueArray.join("-");
-    case "pascal" /* pascal */:
-      return titleCaseWords(valueArray).join("");
-    case "snake" /* snake */:
-      return valueArray.join("_");
-    case "title" /* title */:
-      return titleCaseWords(valueArray).join(" ");
-    default: {
-      const invalidType = convertType;
-      throw new Error(`incorrect case type '${invalidType}'`);
-    }
-  }
-}
-function titleCaseWords(words) {
-  return words.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
-}
-
-// src/libs/obsidian/get-task-state.ts
-var taskStatusConfig = {
-  label: "Status (null to pick on add)",
-  options: Object.values(TaskStatus).concat("null"),
-  type: "dropdown" /* dropdown */,
-  value: "null"
-};
 
 // src/libs/dataview/get-task-table.ts
 async function getTaskTable(apis, config) {
@@ -268,3 +243,31 @@ function getFilter({
     }
   }
 }
+
+// src/libs/services/types/term/definition-api.ts
+var DefinitionApi = ((DefinitionApi2) => {
+  DefinitionApi2["freeDictionary"] = `${"https://api.dictionaryapi.dev/api/v2/entries/en_US" /* freeDictionary */}`;
+  return DefinitionApi2;
+})(DefinitionApi || {});
+
+// src/libs/services/types/term/thesaurus-api.ts
+var ThesaurusApi = ((ThesaurusApi2) => {
+  ThesaurusApi2["freeDictionary"] = `${"https://api.dictionaryapi.dev/api/v2/entries/en_US" /* freeDictionary */}`;
+  return ThesaurusApi2;
+})(ThesaurusApi || {});
+
+// src/libs/services/youtube-service.ts
+var mediaTypeBackMap = /* @__PURE__ */ new Map([
+  ["Channel" /* channel */, "channel" /* channel */],
+  ["Video" /* video */, "video" /* video */]
+]);
+
+// src/scripts/Dataview/task-table.ts
+var { queryConfig } = dv.current();
+getTaskTable(
+  {
+    dataviewApi: dv,
+    obsidianApi: app
+  },
+  queryConfig
+);

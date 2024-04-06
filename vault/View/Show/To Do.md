@@ -13,18 +13,11 @@ queryConfig:
     status: true
   filterType: To Do
   folder: Database/Show
-  limit: 25
+  page:
+    size: 25
 ---
 # Notes
 
 ```dataviewjs
-const { getTaskTable } = require(
-  app.vault.adapter.basePath
-  + '/Core/Script/Dataview/utilities'
-);
-
-getTaskTable({
-  dataviewApi: dv,
-  obsidianApi: app
-}, dv.current().queryConfig);
+await dv.view('task-table');
 ```

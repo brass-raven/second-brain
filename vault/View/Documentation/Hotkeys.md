@@ -40,7 +40,7 @@ Hotkeys allow you to preform common actions by pressing a few keys on your keybo
 - **Toggle comment**: `Command + /`
 - **Toggle italic**: `Command + i`
 - **Cycle bullet/checkbox**: `Command .`
-- **Graph view: Open graph view**: `Command + g`
+- **Graph view: Open graph view**: `Command + g` ^graphView
 - **Create new note**: `Command + Shift + n`
 - **New tab**: `Command + t`
 - **Close window**: `Command + Shift + w`

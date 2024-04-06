@@ -1,8 +1,10 @@
 ---
+aliases:
 class: View
 from:
-  - "[[View/Note/Entertainment|Entertainment]]"
+  - "[[View/Note/Home|Home]]"
 order:
+tags:
 ---
 # Notes
 

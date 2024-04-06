@@ -1,19 +1,19 @@
 ---
 aliases:
-  - Book Series To Read
+  - Abandoned Articles
 class: View
 from:
-  - "[[View/Note/Book|Book]]"
+  - "[[View/Note/Article|Article]]"
 order: 
 queryConfig:
   columns:
     internalRating: ratingsDme
     priority: true
     status: true
-  filterType: To Do
-  folder: Database/BookSeries
+  filterType: Abandoned
+  folder: Database/Article
   page:
-    size: 25
+    size: 100
 ---
 # Notes
 

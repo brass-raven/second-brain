@@ -1,9 +1,9 @@
 ---
 aliases:
-  - Book Series To Read
+  - Video Game Series To Play
 class: View
 from:
-  - "[[View/Note/Book|Book]]"
+  - "[[View/Note/VideoGame|VideoGame]]"
 order: 
 queryConfig:
   columns:
@@ -11,7 +11,7 @@ queryConfig:
     priority: true
     status: true
   filterType: To Do
-  folder: Database/BookSeries
+  folder: Database/VideoGameSeries
   page:
     size: 25
 ---

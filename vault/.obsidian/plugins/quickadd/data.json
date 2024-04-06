@@ -896,7 +896,8 @@
           "settings": {
             "API Key": "",
             "API URL": "https://www.googleapis.com/youtube/v3",
-            "Media Type": "Channel"
+            "Media Type": "Channel",
+            "Status (null to pick on add)": "null"
           }
         },
         {

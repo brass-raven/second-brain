@@ -1,10 +1,9 @@
 ---
 aliases:
-  - Top Dialogs
-  - Top Quotes
+  - Top Places
 class: View
 from:
-  - "[[View/Note/Dialog|Dialog]]"
+  - "[[View/Note/Place|Place]]"
 order:
 queryConfig:
   page:
@@ -27,17 +26,17 @@ const start = pageSize * (page.number ?? 0);
 dv.table(
   [
     "Name",
-    "Speakers",
+    "Address",
     "Rating"
   ],
-  dv.pages('"Database/Dialog"').sort((page) => {
+  dv.pages('"Database/Place"').sort((page) => {
     return page.ratingsDme;
   }, 'desc').slice(
     start,
     start + pageSize
   ).map((page) => [
     page.file.link,
-    metadataMenuApi.fieldModifier(dv, page, 'speakers'),
+    page.address,
     metadataMenuApi.fieldModifier(dv, page, 'ratingsDme')
   ])
 );
