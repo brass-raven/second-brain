@@ -30,14 +30,14 @@ dv.table(
     "Rating"
   ],
   dv.pages('"Database/Place"').sort((page) => {
-    return page.ratingsDme;
+    return page.rating;
   }, 'desc').slice(
     start,
     start + pageSize
   ).map((page) => [
     page.file.link,
     page.address,
-    metadataMenuApi.fieldModifier(dv, page, 'ratingsDme')
+    metadataMenuApi.fieldModifier(dv, page, 'rating')
   ])
 );
 ```

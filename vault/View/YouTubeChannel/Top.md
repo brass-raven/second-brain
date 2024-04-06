@@ -30,14 +30,14 @@ dv.table(
     "Rating"
   ],
   dv.pages('"Database/YouTubeChannel"').sort((page) => {
-    return page.ratingsDme;
+    return page.rating;
   }, 'desc').slice(
     start,
     start + pageSize
   ).map((page) => [
     `![|100](${page.cover})`,
     page.file.link,
-    metadataMenuApi.fieldModifier(dv, page, 'ratingsDme')
+    metadataMenuApi.fieldModifier(dv, page, 'rating')
   ])
 );
 ```

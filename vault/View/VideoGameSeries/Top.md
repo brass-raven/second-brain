@@ -7,7 +7,7 @@ from:
 order: 
 queryConfig:
   columns:
-    internalRating: ratingsDme
+    internalRating: rating
   filterType: Top
   folder: Database/VideoGameSeries
   page:

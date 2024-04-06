@@ -8,7 +8,7 @@ order:
 queryConfig:
   columns:
     externalRating: ratingsIgdb
-    internalRating: ratingsDme
+    internalRating: rating
     priority: true
     status: true
   filterType: To Do

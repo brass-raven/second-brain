@@ -16,7 +16,7 @@ prior:
 priority: "[[Core/Meta/Priority/Basic/Medium|Medium]]"
 publishedOn: {{VALUE:releaseDate}}
 publisher: {{VALUE:publisherLinks}}
-ratingsDme:
+rating:
 ratingsIgdb: {{VALUE:ratingsIgdb}}
 remake: {{VALUE:remakeLinks}}
 remaster: {{VALUE:remasterLinks}}

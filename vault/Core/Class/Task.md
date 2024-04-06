@@ -4,7 +4,7 @@ mapWithTag: false
 icon: check-square
 tagNames: 
 excludes:
-  - ratingsDme
+  - rating
 extends: BaseTask
 version: "2.0"
 fields: []

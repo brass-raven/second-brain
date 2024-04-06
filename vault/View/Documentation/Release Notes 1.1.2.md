@@ -27,6 +27,7 @@ If you want to see the specific files that were changed, the check out the [rele
     - Add `YouTubeChannel` folder (added to [[View/Note/YouTube|YouTube]] parent view) for [[View/Documentation/Folders Class#YouTubeChannel|YouTubeChannel]] queries.
     - Rename `Youtube` parent view to [[View/Note/YouTube|YouTube]]
     - Rename `YoutubVideo` folder to `YouTubeVideo`.
+- Renamed the `ratingsDme` property of the [[View/Documentation/Folders Class#Base|Base]] class to `rating` to make it consistent across vaults.
 - Renamed `Release Log` to [[View/Documentation/Release Notes|Release Notes]] and split release notes up by version into their own notes like the one you are presently reading.
 - Added [[View/Documentation/Upgrading Versions|Upgrading Versions]] notes.
 - Add a [[View/Documentation/Layout#Bookmarks|Bookmark]] to display a color grouped [[View/Documentation/Hotkeys#^graphView|Graph View]] with the [[View/Documentation/Folders Core|Core Folder]] notes filtered out.

@@ -32,8 +32,6 @@ order:
         - Click the "CREDENTIALS" tab.
         - Click the "SHOW KEY" button and copy your key.
         - [[#^addApiKey|Add your API]] key to the "Lookup YouTubeChannel" & "Lookup YouTubeVideo" macros.
-- You should open the vault in a text editor and find `ratingsDme` and replace it with `ratings` followed by your initials (or whatever else you want).
-    - Note: This could be just `rating`, but I did not want to confuse it with things like `ratingsImdb`.
 - The API used to generate daily quotes in new [[View/Documentation/Folders Class#DailyNote|DailyNotes]] stops working on occasion and displays "Error generating daily quote".
 - When [[View/Documentation/Hotkeys#^addNew|adding a new note]] you will get prompted for fields that it was unable to find from the API. For example, you might get a popup asking for "chapters" when adding a new [[View/Documentation/Folders Class#YouTubeVideo|YouTube video]] if it was unable to find chapters for it. Just hit enter with blank inputs until I find a better way to handle defaults in the [[View/Documentation/Plugins QuickAdd|QuickAdd Plugin]].
 - When in the property modal for most files you will see the [[View/Documentation/Metadata#Class Property|class property]] twice. This is because I created my own select that filters out [[View/Documentation/Folders Class|base classes]] before [[View/Documentation/Plugins Metadata Menu|Metadata Menu Plugin]] was updated to add their own `class` dropdown. You can remove my dropdown by opening [[Core/Class/Base|Base]] and removing the `class` property.

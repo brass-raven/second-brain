@@ -54,7 +54,7 @@ The [[Core/Class/Base|Base]] class is extended by all other classes to give ever
 > [!note]- Properties
 > - `class`: [[View/Documentation/Metadata#Class Property|Class property documentation]].
 > - `from`: [[View/Documentation/Metadata#From Property|From property documentation]].
-> - `ratingsDme`: Number user's rating of the media the note is for from 0-100. This property sometimes gets excluded from classes, but it is kept more often than not.
+> - `rating`: Number user's rating of the media the note is for from 0-100. This property sometimes gets excluded from classes, but it is kept more often than not.
 
 ### BaseOmdb
 

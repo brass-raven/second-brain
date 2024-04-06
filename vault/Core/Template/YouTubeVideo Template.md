@@ -9,7 +9,7 @@ finishedOn: {{VALUE:finishedOn}}
 from:
 priority: "[[Core/Meta/Priority/Basic/Medium|Medium]]"
 publishedOn: {{VALUE:publishedOn}}
-ratingsDme:
+rating:
 startedOn: {{VALUE:startedOn}}
 status: {{VALUE:status}}
 tags:

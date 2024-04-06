@@ -8,7 +8,7 @@ order:
 queryConfig:
   columns:
     externalRating: ratingsGoodreads
-    internalRating: ratingsDme
+    internalRating: rating
   filterType: Top
   folder: Database/Article
   page:

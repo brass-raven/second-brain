@@ -3,7 +3,7 @@ aliases:
 class: Author
 cover: "{{VALUE:cover}}"
 from:
-ratingsDme:
+rating:
 series: {{VALUE:seriesLinks}}
 tags:
 url: "{{VALUE:url}}"

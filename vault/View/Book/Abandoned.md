@@ -8,7 +8,7 @@ order:
 queryConfig:
   columns:
     externalRating: ratingsGoodreads
-    internalRating: ratingsDme
+    internalRating: rating
     priority: true
     status: true
   filterType: Abandoned

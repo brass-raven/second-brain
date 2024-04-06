@@ -8,7 +8,7 @@ order:
 queryConfig:
   columns:
     externalRating: ratingsImdb
-    internalRating: ratingsDme
+    internalRating: rating
   filterType: Top
   folder: Database/Movie
   page:

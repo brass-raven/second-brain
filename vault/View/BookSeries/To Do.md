@@ -7,7 +7,7 @@ from:
 order: 
 queryConfig:
   columns:
-    internalRating: ratingsDme
+    internalRating: rating
     priority: true
     status: true
   filterType: To Do

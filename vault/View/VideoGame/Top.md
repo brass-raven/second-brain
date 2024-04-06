@@ -8,7 +8,7 @@ order:
 queryConfig:
   columns:
     externalRating: ratingsIgdb
-    internalRating: ratingsDme
+    internalRating: rating
   filterType: Top
   folder: Database/VideoGame
   page:
