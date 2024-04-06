@@ -3,15 +3,15 @@ aliases:
   - Abandoned Tasks
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/Task|Task]]"
 order:
 queryConfig:
   columns:
     dueOn: true
     priority: true
     status: true
-  filterType: 'Abandoned'
-  folder: 'Database/Task'
+  filterType: Abandoned
+  folder: Database/Task
   limit: 100
 ---
 # Notes

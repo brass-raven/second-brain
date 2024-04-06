@@ -1,13 +1,10 @@
 ---
 class: View
 from:
+  - "[[View/Note/Home|Home]]"
 order:
 ---
 # Notes
-
-## Quick Links
-
-- `= "[[Database/DailyNote/" + dateformat(date(today), "yyyy-MM-dd") + "|Today's Note]]"`.
 
 # Subviews
 

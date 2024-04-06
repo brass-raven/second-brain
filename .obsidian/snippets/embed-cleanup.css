@@ -1,0 +1,23 @@
+/* Hide Left bar and indent that shows it is not part of the document. */
+.markdown-preview-view .markdown-embed,
+.markdown-preview-view .file-embed {
+  border-left: none;
+  padding-left: 0;
+}
+
+/* Hide link until embed is hovered. */
+.markdown-preview-view .file-embed-link svg,
+.markdown-preview-view .markdown-embed-link svg {
+  color: var(--text-accent);
+  opacity: 0;
+}
+.markdown-preview-view .markdown-embed:hover .file-embed-link svg,
+.markdown-preview-view .markdown-embed:hover .markdown-embed-link svg {
+  opacity: 1;
+}
+
+/** Remove static height since I hide items. */
+div.markdown-preview-sizer.markdown-preview-section {
+  min-height: unset !important;
+  padding-bottom: 0;
+}

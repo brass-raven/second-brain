@@ -3,14 +3,14 @@ aliases:
   - Top Shows
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/Movie & Show|Movie & Show]]"
 order:
 queryConfig:
   columns:
-    externalRating: 'ratingsImdb'
-    internalRating: 'ratingsDme'
-  filterType: 'Top'
-  folder: 'Database/Show'
+    externalRating: ratingsImdb
+    internalRating: ratingsDme
+  filterType: Top
+  folder: Database/Show
   limit: 100
 ---
 # Notes

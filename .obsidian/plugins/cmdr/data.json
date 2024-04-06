@@ -10,6 +10,12 @@
       "icon": "edit-2",
       "name": "Edit Workspace",
       "mode": "any"
+    },
+    {
+      "id": "workspaces-plus:Home",
+      "icon": "home",
+      "name": "Home Workspace",
+      "mode": "any"
     }
   ],
   "rightRibbon": [],

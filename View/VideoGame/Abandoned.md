@@ -3,16 +3,16 @@ aliases:
   - Abandoned Video Games
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/VideoGame|VideoGame]]"
 order:
 queryConfig:
   columns:
-    externalRating: 'ratingsIgdb'
-    internalRating: 'ratingsDme'
+    externalRating: ratingsIgdb
+    internalRating: ratingsDme
     priority: true
     status: true
-  filterType: 'Abandoned'
-  folder: 'Database/VideoGame'
+  filterType: Abandoned
+  folder: Database/VideoGame
   limit: 100
 ---
 # Notes

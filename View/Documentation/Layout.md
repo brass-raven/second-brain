@@ -41,7 +41,13 @@ Bookmarks shows you all notes that you have bookmarked throughout your vault.
 
 ## Ribbon
 
-The ribbon bar has three buttons at the top of it. The top one activates the [[View/Documentation/Plugins Workspaces|edit workspace]] (added using the [[View/Documentation/Plugins Commander|Commander Plugin]]), the next one opens today's [[View/Documentation/Folders Class#DailyNote|daily note]], and the final button opens the graph view for the full vault.
+The ribbon bar has three buttons at the top of it.
+
+- A home icon to activate the [[View/Documentation/Plugins Workspaces#Home|home workspace]] (added using the [[View/Documentation/Plugins Commander|Commander Plugin]])
+- A pencil icon to activate the [[View/Documentation/Plugins Workspaces#Edit|edit workspace]] (added using the [[View/Documentation/Plugins Commander|Commander Plugin]])
+- A calendar icon to open today's [[View/Documentation/Folders Class#DailyNote|daily note]].
+- A graph icon to open the graph view for the full vault.
+    - Note: If you want a graph for the current note, see [[#Local Graph View|the local graph view]]. ^vaultGraphView
 
 ## Right Panel
 
@@ -56,6 +62,8 @@ The table of contents shows the hierarchy of headers in the currently open note.
 #### Local Graph View
 
 The local graph view shows the graph view for the currently open note with all notes that are directly linked to it.
+
+> [!note] If you want a graph for all notes in the vault, see [[#^vaultGraphView|the vault graph view]].
 
 #### Outgoing Links
 

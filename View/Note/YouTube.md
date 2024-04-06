@@ -1,13 +1,11 @@
 ---
 class: View
 from:
+  - "[[View/Note/Entertainment|Entertainment]]"
+  - "[[View/Note/Learning|Learning]]"
 order:
 ---
 # Notes
-
-## Quick Links
-
-- `= "[[Database/DailyNote/" + dateformat(date(today), "yyyy-MM-dd") + "|Today's Note]]"`.
 
 # Subviews
 

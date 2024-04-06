@@ -8,8 +8,13 @@ order:
 If you would like to read about just the essentials and learn by doing, then I recommend reading just the [[View/Documentation/Quickstart|quickstart documentation]].
 
 If you would prefer to read about everything prior to diving in, then I recommend reading through the documentation in the below order.
+
+> [!note] It is recommended to [[View/Documentation/Hotkeys#^toggleReadingView|enabling reading view]] (which it should default to) while going through this documentation.
+> You will see a pencil in the top-right corner of this note in reading view and a book in edit view.
+
+^readingViewNote
+
 * [[View/Documentation/Hotkeys|Hotkeys documentation]] (at least the essentials) will give you quick ways to navigate and add to the vault.
-    * Note: [[View/Documentation/Hotkeys#^toggleReadingView|Enabling reading view]] is recommended while going through this documentation.
 * [[View/Documentation/Folders|Folders documentation]] will give you a layout of the vault.
 * [[View/Documentation/Layout|Layout]] will instruct you about the different pieces of the Obsidian UI and how I have it laid out.
 * [[View/Documentation/Metadata|Metadata documentation]] teaches you about adding YAML properties to your notes.

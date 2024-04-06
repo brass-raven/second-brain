@@ -106,6 +106,15 @@
       "key": "ArrowDown"
     }
   ],
+  "file-explorer:duplicate-file": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ],
   "file-explorer:new-file": [
     {
       "modifiers": [

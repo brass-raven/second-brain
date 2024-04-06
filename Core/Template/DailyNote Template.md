@@ -18,7 +18,7 @@ tags:
 
 # Tasks
 
-- [ ] Exercise for 45 minutes.
+- [ ] Exercise.
 - [ ] Drink water 1.
 - [ ] Drink water 2.
 - [ ] Learn something new.

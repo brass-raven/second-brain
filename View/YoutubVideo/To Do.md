@@ -3,15 +3,15 @@ aliases:
   - YouTube Videos To Watch
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/YouTube|YouTube]]"
 order:
 queryConfig:
   columns:
-    internalRating: 'ratingsDme'
+    internalRating: ratingsDme
     priority: true
     status: true
-  filterType: 'To Do'
-  folder: 'Database/YouTubeVideo'
+  filterType: To Do
+  folder: Database/YouTubeVideo
   limit: 25
 ---
 # Notes

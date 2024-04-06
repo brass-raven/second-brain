@@ -47,15 +47,16 @@ Some properties link [[#Aliases Property|aliases]] & [[#Tags Property|tags]] are
 
 The `aliases` property allows you to give a note alternative names that you can use when you [[View/Documentation/Hotkeys#^openQuickSwitcher|open the quick switcher]] and [[View/Documentation/Obsidian Syntax#Internal Link|make an internal link]].
 
-The below example will give you three ways to find a note. By its name or either of its two aliases `Backup name` or `Third name`.
+In the below example I use the `aliases` property to make it easy to find & link to my `Two-Factor Authentication` note using its alternative name `Multi-Factor Authentication` or either of its two acronyms `2FA` or `MFA`.
 
 > [!example]-
 > ##### Syntax
 > ```md
 > ---
 > aliases:
->   - Backup name
->   - Third name
+>   - 2FA
+>   - Multi-Factor Authentication
+>   - MFA
 > ---
 > ```
 

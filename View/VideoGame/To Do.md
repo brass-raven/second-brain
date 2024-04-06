@@ -3,16 +3,16 @@ aliases:
   - Video Games To Play
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/VideoGame|VideoGame]]"
 order:
 queryConfig:
   columns:
-    externalRating: 'ratingsIgdb'
-    internalRating: 'ratingsDme'
+    externalRating: ratingsIgdb
+    internalRating: ratingsDme
     priority: true
     status: true
-  filterType: 'To Do'
-  folder: 'Database/VideoGame'
+  filterType: To Do
+  folder: Database/VideoGame
   limit: 25
 ---
 # Notes
