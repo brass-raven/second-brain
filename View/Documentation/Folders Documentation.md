@@ -1,6 +1,7 @@
 ---
 aliases:
   - Documentation Folder
+  - Documentation
 class: View
 from:
   - "[[View/Documentation/Folders View|View Folder]]"

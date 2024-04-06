@@ -96,6 +96,10 @@ Many [[View/Documentation/Folders Class#View|views]] for notes that extend [[Vie
 
 Many [[View/Documentation/Folders Class#View|views]] for notes that extend [[View/Documentation/Folders Class#BaseTask|base task]] look for a `redo` tag which will cause it to show up in the "To Do" lists even if the status is done. I use this for [[View/Documentation/Folders Class#Movie|movies]] I want to rewatch  and [[View/Documentation/Folders Class#VideoGame|video games]] I want to replay.
 
+##### To Note
+
+Sometimes you want to write notes about something later, but do not have time right now. In those cases add a `toNote` tag, then use the [[View/Note/Take Notes|Take Notes]] [[View/Documentation/Folders Class#View|view]] to find notes with that tag to take notes on later.
+
 ## Extra Metadata Information
 
 ### Inline Properties
