@@ -4,7 +4,7 @@ banner: "{{VALUE:banner}}"
 class: YouTubeChannel
 cover: "{{VALUE:thumbnail}}"
 from:
-ratingsDme:
+rating:
 tags:
 url: "{{VALUE:url}}"
 ---

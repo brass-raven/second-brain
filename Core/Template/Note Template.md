@@ -2,7 +2,7 @@
 aliases:
 class: Note
 from:
-ratingsDme:
+rating:
 tags:
 ---
 # Notes

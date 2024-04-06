@@ -6,7 +6,7 @@
     "prior": "text",
     "parents": "multitext",
     "from": "multitext",
-    "ratingsDme": "number",
+    "rating": "number",
     "type": "multitext",
     "next": "text",
     "relationshipPartner": "multitext",

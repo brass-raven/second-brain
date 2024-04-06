@@ -74,3 +74,21 @@ WHERE
 [Official documentation](https://blacksmithgu.github.io/obsidian-dataview/api/intro/).
 
 You create a JavaScript section by adding a [[View/Documentation/Obsidian Syntax#Code Block|code block]] with the language set to `dataviewjs`. This will allow you to query your notes with syntax similar to an [ORM](https://en.wikipedia.org/wiki/Object–relational_mapping).
+
+### Views
+
+[Official documentation](https://blacksmithgu.github.io/obsidian-dataview/api/code-reference/#dvviewpath-input).
+
+If you find yourself reusing a query frequently (like any queries in the [[View/Documentation/Folders Template|Template Folder]]) you should convert the query into the [[#JavaScript Language]], then move the code into a `.js` file under the [[View/Documentation/Folders Script|Script Folder]]. You can then run this query using a Dataview view.
+
+> [!warning] View Disambiguation
+> Dataview Views which are documented here are a completely different concept than the [[View/Documentation/Folders Class#View|View]] class.
+>
+> With that said, Dataview Views are often used in notes with the [[View/Documentation/Folders Class#View|View]] class.
+
+> [!example]- Example of running a query in `task-table.js`.
+> ````md
+> ```dataviewjs
+> await dv.view('task-table');
+> ```
+> ````

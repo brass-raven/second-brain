@@ -7,8 +7,9 @@ from:
 order:
 ---
 ```dataview
-TABLE
-  file.path
+TABLE without id
+  file.link as "View",
+  file.path as "Path"
 FROM "View"
 WHERE
   !row.from

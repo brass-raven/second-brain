@@ -4,7 +4,7 @@ address: "{{VALUE:address}}"
 class: Place
 from:
 parking:
-ratingsDme:
+rating:
 type: "[[Core/Meta/Type/Place/Other|Other]]"
 url: "{{VALUE:url}}"
 tags:

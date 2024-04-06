@@ -4,23 +4,41 @@ aliases:
   - Top Quotes
 class: View
 from:
-  - "[[View/Note/Book|Book]]"
+  - "[[View/Note/Dialog|Dialog]]"
 order:
 queryConfig:
-  columns:
-    internalRating: ratingsDme
-  filterType: Top
-  folder: Database/Dialog
-  limit: 100
+  page:
+    size: 100
 ---
 # Notes
 
-```dataview
-TABLE WITHOUT ID
-    file.link as "Name",
-    join(speakers, ","),
-    ratingsDme
-FROM "Database/Dialog"
-SORT
-    ratingsDme DESC
+```dataviewjs
+const {
+  'metadata-menu': { api: metadataMenuApi }
+} = app.plugins.plugins;
+const {
+  queryConfig: {
+    page
+  }
+} = dv.current();
+const pageSize = page.size ?? 10;
+const start = pageSize * (page.number ?? 0);
+
+dv.table(
+  [
+    "Name",
+    "Speakers",
+    "Rating"
+  ],
+  dv.pages('"Database/Dialog"').sort((page) => {
+    return page.rating;
+  }, 'desc').slice(
+    start,
+    start + pageSize
+  ).map((page) => [
+    page.file.link,
+    metadataMenuApi.fieldModifier(dv, page, 'speakers'),
+    metadataMenuApi.fieldModifier(dv, page, 'rating')
+  ])
+);
 ```
