@@ -1,0 +1,49 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "workspaces-plus:Edit",
+      "icon": "edit-2",
+      "name": "Edit Workspace",
+      "mode": "any"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "quickadd:choice:727fd423-63fc-44f6-9a2e-c817e72c95dd",
+      "icon": "file-plus",
+      "name": "QuickAdd: New",
+      "mode": "mobile"
+    },
+    {
+      "id": "metadata-menu:open_fields_modal",
+      "icon": "table",
+      "name": "Metadata: Open field modal",
+      "mode": "mobile"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": []
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

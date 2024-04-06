@@ -1,0 +1,11 @@
+{
+  "propertiesInDocument": "hidden",
+  "alwaysUpdateLinks": true,
+  "strictLineBreaks": true,
+  "autoPairMarkdown": false,
+  "useTab": false,
+  "vimMode": false,
+  "showLineNumber": false,
+  "promptDelete": false,
+  "newLinkFormat": "absolute"
+}
