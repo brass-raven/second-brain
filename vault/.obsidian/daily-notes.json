@@ -1,0 +1,5 @@
+{
+  "folder": "Database/DailyNote",
+  "autorun": true,
+  "template": "Core/Template/DailyNote Template"
+}

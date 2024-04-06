@@ -1,0 +1,275 @@
+{
+  "main": {
+    "id": "41d15dd2ac3fa4d0",
+    "type": "split",
+    "children": [
+      {
+        "id": "7d438218d30afacf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4b8bb5fa5e2c9f1d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "View/Documentation/Quickstart.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "de5c7e894959e920",
+    "type": "split",
+    "children": [
+      {
+        "id": "aefd6d12e78042c1",
+        "type": "tabs",
+        "dimension": 26.59870250231696,
+        "children": [
+          {
+            "id": "6ecce83dc159253d",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "c027b1df7f38d245",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "411ebbd73e53c7f3",
+        "type": "tabs",
+        "dimension": 73.40129749768303,
+        "children": [
+          {
+            "id": "943033993a78c152",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d824ac34f55cf4d4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "98d4ec6d05e39eae",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8c400dd851e5706",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f68d3c106cc22020",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "View/Documentation/Quickstart.md"
+              }
+            }
+          },
+          {
+            "id": "93407c1d3686ebfb",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "de5ae9c31f2d4365",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ead9e2e39a35afa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "View/Documentation/Quickstart.md"
+              }
+            }
+          },
+          {
+            "id": "e166fb5be79b8732",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "View/Documentation/Quickstart.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.40039102721668185,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "cd0951c9336fde35",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "View/Documentation/Quickstart.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "be42e90e2d421f3f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "View/Documentation/Quickstart.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "cmdr:Home Workspace": false,
+      "cmdr:Edit Workspace": false,
+      "daily-notes:Open today's daily note": false,
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": true,
+      "command-palette:Open command palette": true,
+      "templater-obsidian:Templater": true,
+      "obsidian-excalidraw-plugin:Create new drawing": true,
+      "workspaces:Manage workspace layouts": true
+    }
+  },
+  "active": "4b8bb5fa5e2c9f1d",
+  "lastOpenFiles": [
+    "Database/DailyNote/2024-03-12.md",
+    "View/Documentation/Quickstart.md",
+    "View/Documentation/Known Issues.md",
+    "View/Documentation/Tips and Tricks.md",
+    "^addApiKey.md",
+    "View/Documentation/Hotkeys.md",
+    "Database/DailyNote/2024-03-11.md",
+    "Database/Task/Take Notes.md",
+    "View/Note/Evolution Of Ideas.md",
+    "View/Note/JSX.md",
+    "View/Note/HTML.md",
+    "Database/Term/Dependency Injection.md",
+    "View/Note/State of Michigan Department of Technology, Management and Budget.md",
+    "View/Note/Angular.md",
+    "Database/Dialog/\"In the mood\" is one of the worst ideas anybody ever came up with..md",
+    "View/Note/Relationships.md",
+    "View/Note/Life Journey.md",
+    "View/View/Unlinked.md",
+    "View/Note/The Nerd Herd.md",
+    "View/Note/The Four Pillars of Object-Oriented Programming.md",
+    "View/Note/SOLID.md",
+    "View/Note/Home.md",
+    "View/Note/Events.md",
+    "View/Documentation/Folders View.md",
+    "View/Documentation/Folders View Notes.md",
+    "View/Book/Top.md",
+    "Database/Meeting",
+    "Database/Note/Code/TypeScript/Web",
+    "Database/Note/Code/TypeScript",
+    "Database/Note/Code",
+    "Database/Note",
+    "Database/Asset/2024-01-12 Hungrybox Smash Tier List.png",
+    "View/View",
+    "Core/Meta/Company",
+    "View/Documentation/Asset",
+    "Database/Place/Nonfiction",
+    "Database/Place/Fiction",
+    "Database/Asset/meme-node-modules-00.webp",
+    "Database/Asset/meme-node-modules-03.jpg",
+    "Database/Asset/meme-node-modules-02.jpg",
+    "Database/Asset/meme-node-modules-01.jpg",
+    "Database/Asset/node-modules-meme-00.webp",
+    "Database/Asset/node-modules-meme-02.jpg",
+    "Database/Asset/node-modules-meme-03.jpg",
+    "Database/Asset/node-modules-meme-01.jpg",
+    "Database/Asset/454638f5b219d06bb349fb136338fc2b-1297766518.jpg",
+    "Home.canvas"
+  ]
+}
