@@ -14,7 +14,7 @@ tagNames:
 filesPaths: 
 bookmarksGroups: 
 excludes:
-  - ratingsDme
+  - rating
 extends: Base
 savedViews: []
 favoriteView: 

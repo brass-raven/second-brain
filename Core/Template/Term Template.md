@@ -3,7 +3,7 @@ aliases:
 antonym: {{VALUE:antonymLinks}}
 from:
 class: Term
-ratingsDme:
+rating:
 synonym: {{VALUE:synonymLinks}}
 tags:
 ---

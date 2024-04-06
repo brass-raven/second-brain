@@ -1,0 +1,60 @@
+{
+  "items": [
+    {
+      "type": "graph",
+      "ctime": 1712022047963,
+      "title": "Vault View",
+      "options": {
+        "collapse-filter": true,
+        "search": "path: -/^Core/",
+        "showTags": false,
+        "showAttachments": false,
+        "hideUnresolved": true,
+        "showOrphans": true,
+        "collapse-color-groups": true,
+        "colorGroups": [
+          {
+            "query": "path: /^Core/",
+            "color": {
+              "a": 1,
+              "rgb": 9717729
+            }
+          },
+          {
+            "query": "path: /^Database/",
+            "color": {
+              "a": 1,
+              "rgb": 4363519
+            }
+          },
+          {
+            "query": "path: /^View/Documentation/",
+            "color": {
+              "a": 1,
+              "rgb": 14048348
+            }
+          },
+          {
+            "query": "path: /^View/",
+            "color": {
+              "a": 1,
+              "rgb": 11392604
+            }
+          }
+        ],
+        "collapse-display": true,
+        "showArrow": false,
+        "textFadeMultiplier": 0,
+        "nodeSizeMultiplier": 1,
+        "lineSizeMultiplier": 1,
+        "collapse-forces": true,
+        "centerStrength": 0.518713248970312,
+        "repelStrength": 10,
+        "linkStrength": 1,
+        "linkDistance": 250,
+        "scale": 0.1399373153183725,
+        "close": false
+      }
+    }
+  ]
+}

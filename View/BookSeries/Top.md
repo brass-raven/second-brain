@@ -7,21 +7,14 @@ from:
 order:
 queryConfig:
   columns:
-    internalRating: ratingsDme
+    internalRating: rating
   filterType: Top
   folder: Database/BookSeries
-  limit: 100
+  page:
+    size: 100
 ---
 # Notes
 
 ```dataviewjs
-const { getTaskTable } = require(
-  app.vault.adapter.basePath
-  + '/Core/Script/Dataview/utilities'
-);
-
-getTaskTable({
-  dataviewApi: dv,
-  obsidianApi: app
-}, dv.current().queryConfig);
+await dv.view('task-table');
 ```

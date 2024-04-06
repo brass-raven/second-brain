@@ -14,7 +14,7 @@ pageCount: {{VALUE:pageCount}}
 prior:
 priority: "[[Core/Meta/Priority/Basic/Medium|Medium]]"
 publishedOn: {{VALUE:publishedOn}}
-ratingsDme:
+rating:
 ratingsGoodreads: {{VALUE:ratingsGoodreads}}
 series: {{VALUE:seriesLinks}}
 startedOn: {{VALUE:startedOn}}

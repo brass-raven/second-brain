@@ -1,12 +1,41 @@
 {
   "collapse-filter": true,
-  "search": "",
+  "search": "path: -/^Core/",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path: /^Core/",
+      "color": {
+        "a": 1,
+        "rgb": 9717729
+      }
+    },
+    {
+      "query": "path: /^Database/",
+      "color": {
+        "a": 1,
+        "rgb": 4363519
+      }
+    },
+    {
+      "query": "path: /^View/Documentation/",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path: /^View/",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +46,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.8821465151513636,
+  "scale": 0.1399373153183725,
   "close": true
 }

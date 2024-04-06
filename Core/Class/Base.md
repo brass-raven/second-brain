@@ -28,7 +28,7 @@ fields:
     type: MultiFile
     path: ""
   - id: RKPYAe
-    name: ratingsDme
+    name: rating
     options:
       min: "0"
       max: "100"

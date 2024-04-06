@@ -2,7 +2,7 @@
 aliases:
 class: Dialog
 from:
-ratingsDme:
+rating:
 speakers:
 tags:
 ---

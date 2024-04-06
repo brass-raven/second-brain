@@ -28,6 +28,7 @@ module.exports = __toCommonJS(utilities_exports);
 // src/libs/dataview/query-notes.ts
 function queryNotes(dataviewApi, {
   limit,
+  page,
   sort,
   source,
   where
@@ -40,12 +41,21 @@ function queryNotes(dataviewApi, {
     desc,
     property
   }) => {
-    pages = pages.sort((page) => {
-      return property(page);
+    pages = pages.sort((page2) => {
+      return property(page2);
     }, desc ? "desc" /* desc */ : "asc" /* asc */);
   });
-  if (typeof limit === "number") {
-    pages = pages.limit(limit);
+  let {
+    number,
+    size = limit
+  } = page ?? {};
+  if (typeof size === "number" && size >= 0) {
+    number = typeof number === "number" && number >= 0 ? number : 0;
+    const start = number * size;
+    pages = pages.slice(
+      start,
+      start + size
+    );
   }
   return pages;
 }
@@ -69,6 +79,15 @@ async function getTable(dataviewApi, {
     )
   );
 }
+
+// src/libs/obsidian/constants/task-status.ts
+var TaskStatus = /* @__PURE__ */ ((TaskStatus2) => {
+  TaskStatus2["blocked"] = "Blocked";
+  TaskStatus2["done"] = "Done";
+  TaskStatus2["inProgress"] = "In Progress";
+  TaskStatus2["toDo"] = "To Do";
+  return TaskStatus2;
+})(TaskStatus || {});
 
 // src/libs/string/convert-case.ts
 function convertCase(value, convertType) {
@@ -99,15 +118,6 @@ function titleCaseWords(words) {
   return words.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
 }
 
-// src/libs/obsidian/constants/task-status.ts
-var TaskStatus = /* @__PURE__ */ ((TaskStatus2) => {
-  TaskStatus2["blocked"] = "Blocked";
-  TaskStatus2["done"] = "Done";
-  TaskStatus2["inProgress"] = "In Progress";
-  TaskStatus2["toDo"] = "To Do";
-  return TaskStatus2;
-})(TaskStatus || {});
-
 // src/libs/obsidian/get-task-state.ts
 var taskStatusConfig = {
   label: "Status (null to pick on add)",
@@ -123,9 +133,10 @@ async function getTaskTable(apis, config) {
     obsidianApi
   } = apis;
   const {
-    folder,
     columns,
-    limit
+    folder,
+    limit,
+    page
   } = config;
   const {
     "metadata-menu": { api: metadataMenuApi }
@@ -133,40 +144,41 @@ async function getTaskTable(apis, config) {
   const filter = getFilter(apis, config);
   const pages = queryNotes(dataviewApi, {
     limit,
+    page,
     source: `"${folder}"`,
     sort: filterConfigs([
       !columns?.priority ? null : {
         desc: true,
-        property: (page) => {
-          return dataviewApi.page(page.priority).order;
+        property: (page2) => {
+          return dataviewApi.page(page2.priority).order;
         }
       },
       !columns?.dueOn ? null : {
-        property: (page) => {
-          return page.dueOn ?? "9999-99-99";
+        property: (page2) => {
+          return page2.dueOn ?? "9999-99-99";
         }
       },
       !columns?.status ? null : {
         desc: true,
-        property: (page) => {
-          return dataviewApi.page(page.status).order;
+        property: (page2) => {
+          return dataviewApi.page(page2.status).order;
         }
       },
       !columns?.internalRating ? null : {
         desc: true,
-        property: (page) => {
-          return page[columns.internalRating];
+        property: (page2) => {
+          return page2[columns.internalRating];
         }
       },
       !columns?.externalRating ? null : {
         desc: true,
-        property: (page) => {
-          return page[columns.externalRating];
+        property: (page2) => {
+          return page2[columns.externalRating];
         }
       }
     ]),
-    where: (page) => {
-      return page.file.folder === folder && filter(page);
+    where: (page2) => {
+      return page2.file.folder === folder && filter(page2);
     }
   });
   let includeCover = false;
@@ -176,44 +188,44 @@ async function getTaskTable(apis, config) {
   await getTable(dataviewApi, {
     columns: filterConfigs([
       !includeCover ? null : {
-        property: (page) => {
-          return `![|200](${page.cover})`;
+        property: (page2) => {
+          return `![|200](${page2.cover})`;
         },
         title: "Cover"
       },
       {
-        property: (page) => {
-          return page.file.link;
+        property: (page2) => {
+          return page2.file.link;
         },
         title: "Name"
       },
       !columns?.status ? null : {
-        property: (page) => {
-          return metadataMenuApi.fieldModifier(dataviewApi, page, "status");
+        property: (page2) => {
+          return metadataMenuApi.fieldModifier(dataviewApi, page2, "status");
         },
         title: "Status"
       },
       !columns?.priority ? null : {
-        property: (page) => {
-          return metadataMenuApi.fieldModifier(dataviewApi, page, "priority");
+        property: (page2) => {
+          return metadataMenuApi.fieldModifier(dataviewApi, page2, "priority");
         },
         title: "Priority"
       },
       !columns?.dueOn ? null : {
-        property: (page) => {
-          return metadataMenuApi.fieldModifier(dataviewApi, page, "dueOn");
+        property: (page2) => {
+          return metadataMenuApi.fieldModifier(dataviewApi, page2, "dueOn");
         },
         title: "Due On"
       },
       !columns?.internalRating ? null : {
-        property: (page) => {
-          return metadataMenuApi.fieldModifier(dataviewApi, page, columns.internalRating);
+        property: (page2) => {
+          return metadataMenuApi.fieldModifier(dataviewApi, page2, columns.internalRating);
         },
         title: "Rating"
       },
       !columns?.externalRating ? null : {
-        property: (page) => {
-          return page[columns.externalRating];
+        property: (page2) => {
+          return page2[columns.externalRating];
         },
         title: convertCase(columns.externalRating, "title" /* title */)
       }
@@ -241,7 +253,10 @@ function getFilter({
       };
     case "To Do" /* toDo */:
       return (page) => {
-        return !page.tags?.includes("abandoned") && (page.status.display !== "Done" || page.tags?.includes("redo")) && (!page.prior || dataviewApi.page(page.prior).status.display === "Done");
+        const isDone = (innerPage) => {
+          return innerPage.tags?.includes("abandoned") || innerPage.status.display === "Done" && !innerPage.tags?.includes("redo");
+        };
+        return !isDone(page) && (!page.prior || isDone(dataviewApi.page(page.prior)));
       };
     case "Top" /* top */:
       return (page) => {

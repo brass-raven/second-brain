@@ -6,7 +6,7 @@ dueOn:
 finishedOn: {{VALUE:finishedOn}}
 from:
 priority: "[[Core/Meta/Priority/Basic/Medium|Medium]]"
-ratingsDme:
+rating:
 startedOn: {{VALUE:startedOn}}
 status: {{VALUE:status}}
 tags:

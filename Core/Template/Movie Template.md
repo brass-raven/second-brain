@@ -16,7 +16,7 @@ prior:
 priority: "[[Core/Meta/Priority/Basic/Medium|Medium]]"
 publishedOn: {{VALUE:publishedOn}}
 rated: "{{VALUE:rated}}"
-ratingsDme:
+rating:
 ratingsImdb: {{VALUE:imdbRating}}
 runtime: "{{VALUE:runtime}}"
 startedOn: {{VALUE:startedOn}}

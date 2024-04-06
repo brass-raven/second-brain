@@ -6,7 +6,7 @@ from:
 importantDates:
 race: Human
 raceBreed:
-ratingsDme:
+rating:
 relationshipChildren:
 relationshipFriend:
 relationshipParent:
