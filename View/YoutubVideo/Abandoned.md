@@ -3,15 +3,15 @@ aliases:
   - Abandoned YouTube Videos
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/YouTube|YouTube]]"
 order:
 queryConfig:
   columns:
-    internalRating: 'ratingsDme'
+    internalRating: ratingsDme
     priority: true
     status: true
-  filterType: 'Abandoned'
-  folder: 'Database/YouTubeVideo'
+  filterType: Abandoned
+  folder: Database/YouTubeVideo
   limit: 100
 ---
 # Notes

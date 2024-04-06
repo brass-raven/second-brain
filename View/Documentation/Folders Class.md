@@ -205,18 +205,40 @@ The [[Core/Class/VideoGameSeries|VideoGameSeries]] class (extends [[#BaseWebTask
 
 ### View
 
-The [[Core/Class/View|View]] class (extends [[#Base]]) is used for notes that interlink and/or query other notes and should be stored in the [[View/Documentation/Folders View|View Folder]].
+The [[Core/Class/View|View]] class (extends [[#Base]]) is used for general notes that do not fall under one of the other classes and should be stored in the [[View/Documentation/Folders View|View Folder]] .
+
+In addition to storing general notes they are used to interlink and/or query other notes throughout the vault.
+
+#### Query View
+
+Query views are where I place my [[View/Documentation/Plugins Dataview|Dataview Plugin]] queries.
+
+When I query notes for a specific class I place it in the [[View/Documentation/Folders View|View Folder]] under a subfolder named after the class I am querying.
+
+> [!example]-
+> You could create a `To Do` note under the `Book` subfolder of the [[View/Documentation/Folders View|View Folder]] to track the books you have yet to finish. In fact, the [[View/Book/To Do|Books To Read]] view is already made for you.
+
+When I made a more general query that selects data across multiple classes, I put it under the [[View/Documentation/Folders View Notes|View Notes Folder]] with my [[#General View]] notes.
+
+#### General View
+
+General view notes can be created in the [[View/Documentation/Folders View Notes|View Notes Folder]] using the [[View/Documentation/Hotkeys#^addNew|add new hotkey]], then selecting "View".
+
+They are the same as [[#Parent View]] notes, but their template does not have the subviews section since not all views have collections of views under them.
+
+> [!example]-
+> I added a `View/Note/Acronyms` note to contain a table of acronyms and what they stand for.
+
+#### Parent View
+
+Parent view notes can be created in the [[View/Documentation/Folders View Notes|View Notes Folder]] using the [[View/Documentation/Hotkeys#^addNew|add new hotkey]], then selecting "Parent View".
+
+They are the same as [[#General View]] notes, but their template has a subviews section that will automatically display view notes that have the current note in their [[View/Documentation/Metadata#From Property|from]] property.
 
 > [!example]-
 > You could create a view for each subject you want to learn about and link them all back to a `Learning` view to access them all from one place.
 >
 > When a subject view gets too large, split it up into multiple views that you reference from the original subject view.
-
-> [!example]-
-> You could create a `To Do` note in this folder that has links out to the `To Do` views for the various data types so you can easily access your books, movies, shows, & tasks queries that you should work on in one place.
-
-> [!example]-
-> You could use the [[View/Documentation/Plugins Dataview|Dataview Plugin]] to display tables of notes in a way that makes it easier for you to access them all from one spot.
 
 ### YouTubeChannel
 

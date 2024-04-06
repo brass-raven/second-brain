@@ -50,7 +50,7 @@ Links can also be previewed by holding `Command` and hovering over them.
 
 ### Link Alias
 
-Links can be given another name by adding a `|` character after the link identifier followed by the alias to display.
+Links can be given another name by adding a `|` character after the link identifier followed by the alias to display. If you find yourself regularly referring to a given note by an alias, then it might make sense to use the [[View/Documentation/Metadata#Aliases Property|aliases property]].
 
 > [!example]-
 > ##### Syntax
@@ -282,7 +282,7 @@ Callouts can be nested inside of other callouts.
 > > Outer content.
 > > > [!tip] Inner Title
 > > > Inner content.
-> > 
+> >
 > > More outer content.
 > ```
 > > [!info] Output
@@ -290,7 +290,7 @@ Callouts can be nested inside of other callouts.
 > > > Outer content.
 > > > > [!tip] Inner Title
 > > > > Inner content.
-> > > 
+> > >
 > > > More outer content.
 
 ### Types

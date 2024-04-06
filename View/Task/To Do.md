@@ -3,15 +3,15 @@ aliases:
   - Tasks To Do
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/Task|Task]]"
 order:
 queryConfig:
   columns:
     dueOn: true
     priority: true
     status: true
-  filterType: 'To Do'
-  folder: 'Database/Task'
+  filterType: To Do
+  folder: Database/Task
   limit: 25
 ---
 # Notes

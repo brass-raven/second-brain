@@ -3,15 +3,15 @@ aliases:
   - Abandoned Book Series
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/Book|Book]]"
 order:
 queryConfig:
   columns:
-    internalRating: 'ratingsDme'
+    internalRating: ratingsDme
     priority: true
     status: true
-  filterType: 'Abandoned'
-  folder: 'Database/BookSeries'
+  filterType: Abandoned
+  folder: Database/BookSeries
   limit: 100
 ---
 # Notes

@@ -1,13 +1,11 @@
 ---
+aliases:
 class: View
 from:
 order:
+tags:
 ---
 # Notes
-
-## Quick Links
-
-- `= "[[Database/DailyNote/" + dateformat(date(today), "yyyy-MM-dd") + "|Today's Note]]"`.
 
 # Subviews
 

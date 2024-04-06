@@ -3,16 +3,16 @@ aliases:
   - Abandoned Books
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/Book|Book]]"
 order:
 queryConfig:
   columns:
-    externalRating: 'ratingsGoodreads'
-    internalRating: 'ratingsDme'
+    externalRating: ratingsGoodreads
+    internalRating: ratingsDme
     priority: true
     status: true
-  filterType: 'Abandoned'
-  folder: 'Database/Book'
+  filterType: Abandoned
+  folder: Database/Book
   limit: 100
 ---
 # Notes

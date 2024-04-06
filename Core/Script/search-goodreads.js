@@ -489,7 +489,7 @@ ${description}` : "",
         const bookAlias = `${bookTitle} (${seriesHeaders[index]})`;
         return `## ${bookAlias}
 
-![[${"Database/Book" /* book */}/${bookTitle}]]`;
+![[${"Database/Book" /* book */}/${bookTitle}#Description]]`;
       }).join("\n\n");
     }).join("\n\n");
     return {

@@ -3,14 +3,14 @@ aliases:
   - Top Video Games
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/VideoGame|VideoGame]]"
 order:
 queryConfig:
   columns:
-    externalRating: 'ratingsIgdb'
-    internalRating: 'ratingsDme'
-  filterType: 'Top'
-  folder: 'Database/VideoGame'
+    externalRating: ratingsIgdb
+    internalRating: ratingsDme
+  filterType: Top
+  folder: Database/VideoGame
   limit: 100
 ---
 # Notes

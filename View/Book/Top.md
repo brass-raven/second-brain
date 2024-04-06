@@ -3,14 +3,14 @@ aliases:
   - Top Books
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/Book|Book]]"
 order:
 queryConfig:
   columns:
-    externalRating: 'ratingsGoodreads'
-    internalRating: 'ratingsDme'
-  filterType: 'Top'
-  folder: 'Database/Book'
+    externalRating: ratingsGoodreads
+    internalRating: ratingsDme
+  filterType: Top
+  folder: Database/Book
   limit: 100
 ---
 # Notes

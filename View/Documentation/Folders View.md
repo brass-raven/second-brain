@@ -14,7 +14,7 @@ Home for [[View/Documentation/Folders Class#View|View]] notes that query and lin
 
 # Children
 
-- One folder for each non-base [[View/Documentation/Metadata#Class Property|class]] to store notes that query those notes from the [[View/Documentation/Folders Database|Database]].
+- One folder for each non-base [[View/Documentation/Metadata#Class Property|class]] to store notes that query those notes from the [[View/Documentation/Folders Database|Database]] using the [[View/Documentation/Plugins Dataview|Dataview Plugin]].
 - [[View/Documentation/Folders View Notes|View Notes Folder]].
 - [[View/Documentation/Folders Documentation|Documentation Folder]].
 

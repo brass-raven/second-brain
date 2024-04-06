@@ -35,35 +35,11 @@
           "macroId": "e9b8e4a0-ec82-4fcc-ae46-e08074ed0ad9"
         },
         {
-          "id": "3e693fae-0c97-45bf-99b3-f86cd324ef3a",
+          "id": "658a2772-1917-4622-a66b-4658fbb66ed9",
           "name": "Character",
-          "type": "Template",
+          "type": "Macro",
           "command": true,
-          "templatePath": "Core/Template/Character Template.md",
-          "fileNameFormat": {
-            "enabled": true,
-            "format": "{{VALUE:Character Name}}"
-          },
-          "folder": {
-            "enabled": true,
-            "folders": [
-              "Database/Character/Fiction",
-              "Database/Character/Nonfiction"
-            ],
-            "chooseWhenCreatingNote": false,
-            "createInSameFolderAsActiveFile": false,
-            "chooseFromSubfolders": false
-          },
-          "appendLink": false,
-          "openFileInNewTab": {
-            "enabled": false,
-            "direction": "vertical",
-            "focus": true
-          },
-          "openFile": true,
-          "openFileInMode": "default",
-          "fileExistsMode": "Increment the file name",
-          "setFileExistsBehavior": false
+          "macroId": "59fd581a-394b-4fbf-a28d-387699be1b1f"
         },
         {
           "id": "d50c2559-cc09-4f3b-81da-a0caf571f1b3",
@@ -96,19 +72,40 @@
           "setFileExistsBehavior": false
         },
         {
-          "id": "6a225e0b-d4a7-465d-8985-134c8f918d59",
+          "id": "44406691-00af-4c3a-86ea-88fe8a6aeea2",
           "name": "Dialog",
+          "type": "Macro",
+          "command": true,
+          "macroId": "82cc4fd2-d660-4cdc-8c7e-6d2dd0372d8f"
+        },
+        {
+          "id": "f621fadf-bb01-4e0a-a048-f83595bbe92b",
+          "name": "Meeting",
+          "type": "Macro",
+          "command": true,
+          "macroId": "b7562749-2d0f-4ead-aa91-32344d48770b"
+        },
+        {
+          "id": "ad4c351b-1e99-4bc2-bb4a-0eed1c671f1f",
+          "name": "Movie",
+          "type": "Macro",
+          "command": true,
+          "macroId": "abb88366-0577-4c1d-90a7-8d713c8b01b8"
+        },
+        {
+          "id": "dbe4ea11-3013-4f24-b853-4ce5574f3bf0",
+          "name": "Parent View",
           "type": "Template",
           "command": true,
-          "templatePath": "Core/Template/Dialog Template.md",
+          "templatePath": "Core/Template/View Parent Template.md",
           "fileNameFormat": {
             "enabled": true,
-            "format": "{{VALUE:Dialog}}"
+            "format": "{{VALUE:View}}"
           },
           "folder": {
             "enabled": true,
             "folders": [
-              "Database/Dialog"
+              "View/Note"
             ],
             "chooseWhenCreatingNote": false,
             "createInSameFolderAsActiveFile": false,
@@ -126,11 +123,11 @@
           "setFileExistsBehavior": false
         },
         {
-          "id": "ad4c351b-1e99-4bc2-bb4a-0eed1c671f1f",
-          "name": "Movie",
+          "id": "c97675c4-4cca-434e-840e-5f960d0b0c86",
+          "name": "Person",
           "type": "Macro",
           "command": true,
-          "macroId": "abb88366-0577-4c1d-90a7-8d713c8b01b8"
+          "macroId": "59fd581a-394b-4fbf-a28d-387699be1b1f"
         },
         {
           "id": "a2e69afc-0c68-459f-9a4c-a8aa506f28ef",
@@ -162,6 +159,13 @@
           "openFileInMode": "default",
           "fileExistsMode": "Increment the file name",
           "setFileExistsBehavior": false
+        },
+        {
+          "id": "94704079-a23c-4154-9a03-67a17c300e5d",
+          "name": "Quote",
+          "type": "Macro",
+          "command": true,
+          "macroId": "82cc4fd2-d660-4cdc-8c7e-6d2dd0372d8f"
         },
         {
           "id": "0d62e181-69bd-4a8b-8df8-8a7b7c300a8f",
@@ -250,6 +254,13 @@
           "openFileInMode": "default",
           "fileExistsMode": "Increment the file name",
           "setFileExistsBehavior": false
+        },
+        {
+          "id": "4d75a7ff-0b84-41eb-bc24-93d0130f5fd9",
+          "name": "Word",
+          "type": "Macro",
+          "command": true,
+          "macroId": "457e71f1-3a93-4124-b8d0-c5bfe9f7540d"
         },
         {
           "id": "7467305b-ee99-4de8-bdd3-f25837ddd2d4",
@@ -456,6 +467,133 @@
               "enabled": true,
               "folders": [
                 "Database/BookSeries"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup Character",
+      "id": "59fd581a-394b-4fbf-a28d-387699be1b1f",
+      "commands": [
+        {
+          "name": "character-template",
+          "type": "NestedChoice",
+          "id": "674f67df-a42d-46c5-949f-1ac0943ee49c",
+          "choice": {
+            "id": "a0ffbd2e-3a6b-45bc-9919-f1fed4284f01",
+            "name": "character-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Character Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Character/Fiction",
+                "Database/Character/Nonfiction"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup Dialog",
+      "id": "82cc4fd2-d660-4cdc-8c7e-6d2dd0372d8f",
+      "commands": [
+        {
+          "name": "dialog-template",
+          "type": "NestedChoice",
+          "id": "2e0759dc-462a-4607-a2e6-fd15e4cad56d",
+          "choice": {
+            "id": "39cd12f8-d702-4f18-a7a4-817ad07d1d8e",
+            "name": "dialog-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Dialog Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:Dialog}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Dialog"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup Meeting",
+      "id": "b7562749-2d0f-4ead-aa91-32344d48770b",
+      "commands": [
+        {
+          "name": "meeting-template",
+          "type": "NestedChoice",
+          "id": "474374dd-c4ff-48b2-8480-45ecd19a1a7b",
+          "choice": {
+            "id": "68feece6-0f52-43bf-a534-127273e2d5f0",
+            "name": "meeting-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Meeting Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:meetingName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Meeting"
               ],
               "chooseWhenCreatingNote": false,
               "createInSameFolderAsActiveFile": false,
@@ -758,7 +896,8 @@
           "settings": {
             "API Key": "",
             "API URL": "https://www.googleapis.com/youtube/v3",
-            "Media Type": "Channel"
+            "Media Type": "Channel",
+            "Status (null to pick on add)": "null"
           }
         },
         {

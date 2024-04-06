@@ -3,16 +3,16 @@ aliases:
   - Books To Read
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/Book|Book]]"
 order:
 queryConfig:
   columns:
-    externalRating: 'ratingsGoodreads'
-    internalRating: 'ratingsDme'
+    externalRating: ratingsGoodreads
+    internalRating: ratingsDme
     priority: true
     status: true
-  filterType: 'To Do'
-  folder: 'Database/Book'
+  filterType: To Do
+  folder: Database/Book
   limit: 25
 ---
 # Notes

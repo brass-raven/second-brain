@@ -3,16 +3,16 @@ aliases:
   - Movies To Watch
 class: View
 from:
-  - "[[View/Note/Home|Home]]"
+  - "[[View/Note/Movie & Show|Movie & Show]]"
 order:
 queryConfig:
   columns:
-    externalRating: 'ratingsImdb'
-    internalRating: 'ratingsDme'
+    externalRating: ratingsImdb
+    internalRating: ratingsDme
     priority: true
     status: true
-  filterType: 'To Do'
-  folder: 'Database/Movie'
+  filterType: To Do
+  folder: Database/Movie
   limit: 25
 ---
 # Notes
