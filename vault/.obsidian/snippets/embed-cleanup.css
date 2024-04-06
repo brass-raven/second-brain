@@ -1,6 +1,6 @@
 /* Hide Left bar and indent that shows it is not part of the document. */
-.markdown-preview-view .markdown-embed,
-.markdown-preview-view .file-embed {
+.markdown-preview-view .file-embed,
+.markdown-preview-view .markdown-embed {
   border-left: none;
   padding-left: 0;
 }
