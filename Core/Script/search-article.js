@@ -113,6 +113,25 @@ function getJsWeeklyHeaders(html) {
   });
 }
 
+// src/libs/html/get-wikipedia-headers.ts
+function getWikipediaHeaders(html) {
+  const headers = getHtmlHeaders(html);
+  if (headers[0].content === "Contents") {
+    headers.splice(0, 1);
+  }
+  if (headers[0].level === 1) {
+    headers[0].content = "Chapters";
+    headers.splice(1, 0, {
+      content: "Description",
+      level: 2
+    });
+  }
+  headers.forEach((header) => {
+    header.content = header.content.replace(/\s*\[edit\]\s*$/, "");
+  });
+  return headers;
+}
+
 // src/libs/markdown/create-markdown-file-name.ts
 var invalidCharacterSearch = /[\\,#%\{\}\/*<>$\'\":@\|]*/g;
 var multiSpaceSearch = /\s\s+/g;
@@ -276,6 +295,16 @@ var mediaTypeBackMap = /* @__PURE__ */ new Map([
 ]);
 
 // src/scripts/search-article.ts
+var headerGetters = [
+  {
+    search: /\bjavascriptweekly\.com\b/,
+    getter: getJsWeeklyHeaders
+  },
+  {
+    search: /\bwikipedia\.org\b/,
+    getter: getWikipediaHeaders
+  }
+];
 async function entry(entryApis, configOptions) {
   const { quickAddApi } = entryApis;
   const {
@@ -296,7 +325,9 @@ async function entry(entryApis, configOptions) {
     url: query,
     method: "GET" /* get */
   });
-  const headerGetter = query.includes("javascriptweekly.com") ? getJsWeeklyHeaders : getHtmlHeaders;
+  const headerGetter = headerGetters.find(({ search }) => {
+    return search.test(query);
+  })?.getter ?? getHtmlHeaders;
   const headers = createMarkdownHeaders(
     headerGetter(response).map((header) => {
       header.level += 1;

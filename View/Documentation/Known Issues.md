@@ -11,6 +11,19 @@ order:
         - Go to the [OMDB API Key](https://www.omdbapi.com/apikey.aspx) site and create an account.
         - Search your emails for "OMDB" and copy your API key out of it.
         - [[#^addApiKey|Add your API]] key to the "Lookup Movie" & "Lookup Show" macros.
+    - Twitch client & secret (used by IGDB for [[View/Documentation/Folders Class#VideoGame|VideoGame]] & [[View/Documentation/Folders Class#VideoGameSeries|VideoGameSeries]]). ^twitchTokenSetup
+        - Go to the [Twitch Developer Console](https://dev.twitch.tv) and log in.
+        - Click the "Applications" tab in the left sidenav.
+        - Click the "+ Register Your Application" button.
+        - Fill the form out, below is what I used.
+            - **Name**: `Second Brain`
+            - **OAuth Redirect URLs**: `http://localhost`
+            - **Category**: `Application Integration`
+            - **Client Type**: `Confidential`
+        - Click the "Create" button.
+        - Click the "Manage" button next to the new client.
+        - Click the "New Secret" button.
+        - Use the "Client ID" and "Client Secret" to [[#^addApiKey|add your keys]] to the "Lookup VideoGame" & "Lookup VideoGameSeries" macros.
     - YouTube API Key (used for [[View/Documentation/Folders Class#YouTubeChannel|YouTubeChannel]] & [[View/Documentation/Folders Class#YouTubeVideo|YouTubeVideo]]).
         - Go to the [Google Developers Console](https://console.cloud.google.com/apis/dashboard) and log in.
         - Click the "+ ENABLE APIS AND SERVICES" button at the top of the page.
@@ -30,6 +43,6 @@ order:
 > - [[View/Documentation/Hotkeys#^openSettings|Open Obsidian settings]], click "QuickAdd", and click "Manage Macros".
 > - Click "Configure" under the lookup that you want to add an API key for.
 > - Click the gear icon next to "search-*" script at the top.
-> - Paste your YouTube API key into the "API Key" field.
+> - Paste your API key into the "API Key" field (or other fields that the documentation suggested).
 
 ^addApiKey
