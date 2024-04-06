@@ -1,0 +1,18 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "prior": "text",
+    "parents": "multitext",
+    "from": "multitext",
+    "ratingsDme": "number",
+    "type": "multitext",
+    "next": "text",
+    "relationshipPartner": "multitext",
+    "relationshipSibling": "multitext",
+    "relationshipParent": "multitext",
+    "relationshipFriend": "multitext",
+    "relationshipChildren": "multitext"
+  }
+}

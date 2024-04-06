@@ -1,0 +1,877 @@
+{
+  "choices": [
+    {
+      "id": "727fd423-63fc-44f6-9a2e-c817e72c95dd",
+      "name": "New",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "26aea921-bc86-4f46-8a9b-9966c12e86ce",
+          "name": "Article",
+          "type": "Macro",
+          "command": true,
+          "macroId": "5ce0963f-6d90-4d7f-bc78-f7b9aee1ddc0"
+        },
+        {
+          "id": "b2f7bb7a-078f-472f-8c9c-fec36dc5d83f",
+          "name": "Author",
+          "type": "Macro",
+          "command": true,
+          "macroId": "2b1c5f9f-f98c-461a-8a7f-18b39046c568"
+        },
+        {
+          "id": "7d63c76f-397e-4e05-910d-042e05a5d762",
+          "name": "Book",
+          "type": "Macro",
+          "command": true,
+          "macroId": "4d1900e0-e37f-497d-8831-e8c3f10eccf9"
+        },
+        {
+          "id": "39d3f22b-625f-4987-8c10-9ed8c43cab32",
+          "name": "BookSeries",
+          "type": "Macro",
+          "command": true,
+          "macroId": "e9b8e4a0-ec82-4fcc-ae46-e08074ed0ad9"
+        },
+        {
+          "id": "3e693fae-0c97-45bf-99b3-f86cd324ef3a",
+          "name": "Character",
+          "type": "Template",
+          "command": true,
+          "templatePath": "Core/Template/Character Template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "{{VALUE:Character Name}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "Database/Character/Fiction",
+              "Database/Character/Nonfiction"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false,
+            "chooseFromSubfolders": false
+          },
+          "appendLink": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default",
+          "fileExistsMode": "Increment the file name",
+          "setFileExistsBehavior": false
+        },
+        {
+          "id": "d50c2559-cc09-4f3b-81da-a0caf571f1b3",
+          "name": "Daily Note",
+          "type": "Template",
+          "command": true,
+          "templatePath": "Core/Template/DailyNote Template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "{{VALUE:Date}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "Database/DailyNote"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false,
+            "chooseFromSubfolders": false
+          },
+          "appendLink": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default",
+          "fileExistsMode": "Increment the file name",
+          "setFileExistsBehavior": false
+        },
+        {
+          "id": "6a225e0b-d4a7-465d-8985-134c8f918d59",
+          "name": "Dialog",
+          "type": "Template",
+          "command": true,
+          "templatePath": "Core/Template/Dialog Template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "{{VALUE:Dialog}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "Database/Dialog"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false,
+            "chooseFromSubfolders": false
+          },
+          "appendLink": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default",
+          "fileExistsMode": "Increment the file name",
+          "setFileExistsBehavior": false
+        },
+        {
+          "id": "ad4c351b-1e99-4bc2-bb4a-0eed1c671f1f",
+          "name": "Movie",
+          "type": "Macro",
+          "command": true,
+          "macroId": "abb88366-0577-4c1d-90a7-8d713c8b01b8"
+        },
+        {
+          "id": "a2e69afc-0c68-459f-9a4c-a8aa506f28ef",
+          "name": "Place",
+          "type": "Template",
+          "command": true,
+          "templatePath": "Core/Template/Place Template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "{{VALUE:Place}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "Database/Place/Fiction",
+              "Database/Place/Nonfiction"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false,
+            "chooseFromSubfolders": false
+          },
+          "appendLink": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default",
+          "fileExistsMode": "Increment the file name",
+          "setFileExistsBehavior": false
+        },
+        {
+          "id": "0d62e181-69bd-4a8b-8df8-8a7b7c300a8f",
+          "name": "Show",
+          "type": "Macro",
+          "command": true,
+          "macroId": "3bd5e917-ce51-4aeb-924d-b41f8c5f4581"
+        },
+        {
+          "id": "b809cfbc-5ff2-4626-8976-27efd3efdba7",
+          "name": "Task",
+          "type": "Template",
+          "command": true,
+          "templatePath": "Core/Template/Task Template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "{{VALUE:Task}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "Database/Task"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false,
+            "chooseFromSubfolders": false
+          },
+          "appendLink": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default",
+          "fileExistsMode": "Increment the file name",
+          "setFileExistsBehavior": false
+        },
+        {
+          "id": "6e2d95a1-314d-46b0-ac2b-0e290a2ec9c6",
+          "name": "Term",
+          "type": "Macro",
+          "command": true,
+          "macroId": "457e71f1-3a93-4124-b8d0-c5bfe9f7540d"
+        },
+        {
+          "id": "841ae368-a5d0-4793-9986-b6f0b9a49a78",
+          "name": "Video Game",
+          "type": "Macro",
+          "command": true,
+          "macroId": "76f0ec76-a10d-4144-80c8-122e3722a4a0"
+        },
+        {
+          "id": "b88efb43-dd88-4f48-91db-e630e10ee555",
+          "name": "Video Game Series",
+          "type": "Macro",
+          "command": true,
+          "macroId": "d144e473-e3d5-476a-bb71-4ac665e5367c"
+        },
+        {
+          "id": "14580711-2aad-41e8-acdf-9938e9055377",
+          "name": "View",
+          "type": "Template",
+          "command": true,
+          "templatePath": "Core/Template/View Template.md",
+          "fileNameFormat": {
+            "enabled": true,
+            "format": "{{VALUE:View}}"
+          },
+          "folder": {
+            "enabled": true,
+            "folders": [
+              "View/Note"
+            ],
+            "chooseWhenCreatingNote": false,
+            "createInSameFolderAsActiveFile": false,
+            "chooseFromSubfolders": true
+          },
+          "appendLink": false,
+          "openFileInNewTab": {
+            "enabled": false,
+            "direction": "vertical",
+            "focus": true
+          },
+          "openFile": true,
+          "openFileInMode": "default",
+          "fileExistsMode": "Increment the file name",
+          "setFileExistsBehavior": false
+        },
+        {
+          "id": "7467305b-ee99-4de8-bdd3-f25837ddd2d4",
+          "name": "YouTube Channel",
+          "type": "Macro",
+          "command": true,
+          "macroId": "eccc3761-51d7-48d4-a0bd-6afd2578e295"
+        },
+        {
+          "id": "8d291236-7446-4027-b6d6-31a4f1902303",
+          "name": "YouTube Video",
+          "type": "Macro",
+          "command": true,
+          "macroId": "f6cf1ed1-87e5-46e4-8c1e-efd99f9918d2"
+        }
+      ]
+    }
+  ],
+  "macros": [
+    {
+      "name": "Lookup Article",
+      "id": "5ce0963f-6d90-4d7f-bc78-f7b9aee1ddc0",
+      "commands": [
+        {
+          "name": "search-article",
+          "type": "UserScript",
+          "id": "451ab69b-584b-4e93-a8fc-ef7fc9b8e7a8",
+          "path": "Core/Script/search-article.js",
+          "settings": {
+            "Status (null to pick on add)": "null"
+          }
+        },
+        {
+          "name": "article-template",
+          "type": "NestedChoice",
+          "id": "6da1b9b4-26f0-4634-af9e-0254dae1c904",
+          "choice": {
+            "id": "a608a632-d021-4d8d-b6a4-0ed2f33108ca",
+            "name": "article-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Article Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Article"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup Author",
+      "id": "2b1c5f9f-f98c-461a-8a7f-18b39046c568",
+      "commands": [
+        {
+          "name": "search-goodreads",
+          "type": "UserScript",
+          "id": "4b151c76-19a7-4204-9fa9-2d8fa6c4144c",
+          "path": "Core/Script/search-goodreads.js",
+          "settings": {
+            "Media Type": "Author",
+            "Status (null to pick on add)": "null"
+          }
+        },
+        {
+          "name": "author-template",
+          "type": "NestedChoice",
+          "id": "ff0e7ab5-86e7-4f28-b445-fecae5710be5",
+          "choice": {
+            "id": "1906d10c-53b6-4305-9c56-239fc2fdebf4",
+            "name": "author-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Author Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Author"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup Book",
+      "id": "4d1900e0-e37f-497d-8831-e8c3f10eccf9",
+      "commands": [
+        {
+          "name": "search-goodreads",
+          "type": "UserScript",
+          "id": "0b7f0c31-8d82-4d68-bded-4349abd8e441",
+          "path": "Core/Script/search-goodreads.js",
+          "settings": {
+            "Media Type": "Book",
+            "Status (null to pick on add)": "null"
+          }
+        },
+        {
+          "name": "book-template",
+          "type": "NestedChoice",
+          "id": "507541b6-dc33-4f0f-ac64-d31931991636",
+          "choice": {
+            "id": "38eaca31-7793-4561-83e5-080b00802746",
+            "name": "book-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Book Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Book"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup BookSeries",
+      "id": "e9b8e4a0-ec82-4fcc-ae46-e08074ed0ad9",
+      "commands": [
+        {
+          "name": "search-goodreads",
+          "type": "UserScript",
+          "id": "fe2cf755-43cd-4ae2-a3ef-bd7be0d02b2c",
+          "path": "Core/Script/search-goodreads.js",
+          "settings": {
+            "Media Type": "Book Series",
+            "Status (null to pick on add)": "null"
+          }
+        },
+        {
+          "name": "book-series-template",
+          "type": "NestedChoice",
+          "id": "aeacbf4b-8e00-4a63-9bbd-d78f472e15af",
+          "choice": {
+            "id": "0c8f4010-d4db-4f5c-ba69-a42a30f7757b",
+            "name": "book-series-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/BookSeries Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/BookSeries"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup Movie",
+      "id": "abb88366-0577-4c1d-90a7-8d713c8b01b8",
+      "commands": [
+        {
+          "name": "search-omdb",
+          "type": "UserScript",
+          "id": "4b7b5c1e-14b2-49ac-ae7d-7686c9e8d7d7",
+          "path": "Core/Script/search-omdb.js",
+          "settings": {
+            "API Key": "",
+            "API URL": "https://www.omdbapi.com",
+            "Media Type": "Movie",
+            "Status (null to pick on add)": "null"
+          }
+        },
+        {
+          "name": "movie-template",
+          "type": "NestedChoice",
+          "id": "86475deb-539a-4f5a-a44c-196ce1a51671",
+          "choice": {
+            "id": "49a977be-e00a-4ab5-85c1-137225c29f8e",
+            "name": "movie-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Movie Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Movie"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup Show",
+      "id": "3bd5e917-ce51-4aeb-924d-b41f8c5f4581",
+      "commands": [
+        {
+          "name": "search-omdb",
+          "type": "UserScript",
+          "id": "c23fdc42-1663-4149-82fc-78f19fa45637",
+          "path": "Core/Script/search-omdb.js",
+          "settings": {
+            "API Key": "",
+            "API URL": "https://www.omdbapi.com",
+            "Media Type": "Show",
+            "Status (null to pick on add)": "null"
+          }
+        },
+        {
+          "name": "show-template",
+          "type": "NestedChoice",
+          "id": "06cbe9d1-d4ce-43e6-b2d2-a63c4af79a31",
+          "choice": {
+            "id": "a4d6d229-139f-4204-9978-ce7e4c8a7284",
+            "name": "show-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Show Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Show"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup Term",
+      "id": "457e71f1-3a93-4124-b8d0-c5bfe9f7540d",
+      "commands": [
+        {
+          "name": "search-term",
+          "type": "UserScript",
+          "id": "3fe29af6-bd69-4c74-a23a-ae34116e3a50",
+          "path": "Core/Script/search-term.js",
+          "settings": {
+            "Definition Api": "https://api.dictionaryapi.dev/api/v2/entries/en_US",
+            "Definition Token": "",
+            "Thesaurus Api": "https://api.dictionaryapi.dev/api/v2/entries/en_US",
+            "Thesaurus Token": ""
+          }
+        },
+        {
+          "name": "term-template",
+          "type": "NestedChoice",
+          "id": "7a4c9da4-1bc6-4f0f-8d75-96f0c4997841",
+          "choice": {
+            "id": "de83e838-c19b-4211-8834-665a3b968770",
+            "name": "term-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/Term Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/Term"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup VideoGame",
+      "id": "76f0ec76-a10d-4144-80c8-122e3722a4a0",
+      "commands": [
+        {
+          "name": "search-igdb",
+          "type": "UserScript",
+          "id": "8079383f-8510-435e-931f-af4c58594284",
+          "path": "Core/Script/search-igdb.js",
+          "settings": {
+            "Media Type": "Game",
+            "Status (null to pick on add)": "null",
+            "Twitch Client ID": "",
+            "Twitch Client Secret": ""
+          }
+        },
+        {
+          "name": "video-game-template",
+          "type": "NestedChoice",
+          "id": "0bba3002-56ff-433a-a01d-685f13eabbab",
+          "choice": {
+            "id": "575fdce6-3e8a-4d37-942d-137821aa74d4",
+            "name": "video-game-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/VideoGame Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/VideoGame"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup VideoGameSeries",
+      "id": "d144e473-e3d5-476a-bb71-4ac665e5367c",
+      "commands": [
+        {
+          "name": "search-igdb",
+          "type": "UserScript",
+          "id": "b68df0bb-8eb7-4a31-8913-ad2c228ad8c8",
+          "path": "Core/Script/search-igdb.js",
+          "settings": {
+            "Media Type": "GameSeries",
+            "Status (null to pick on add)": "null",
+            "Twitch Client ID": "",
+            "Twitch Client Secret": ""
+          }
+        },
+        {
+          "name": "video-game-series-template",
+          "type": "NestedChoice",
+          "id": "e12e76f7-ba6f-427f-8bbf-eb06da7f1e81",
+          "choice": {
+            "id": "b21dbaae-1622-4bfb-bc65-c258e4cf77d7",
+            "name": "video-game-series-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/VideoGameSeries Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/VideoGameSeries"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup YouTubeChannel",
+      "id": "eccc3761-51d7-48d4-a0bd-6afd2578e295",
+      "commands": [
+        {
+          "name": "search-youtube",
+          "type": "UserScript",
+          "id": "117e5822-870f-41d7-b336-56d94f58f329",
+          "path": "Core/Script/search-youtube.js",
+          "settings": {
+            "API Key": "",
+            "API URL": "https://www.googleapis.com/youtube/v3",
+            "Media Type": "Channel"
+          }
+        },
+        {
+          "name": "youtube-channel-template",
+          "type": "NestedChoice",
+          "id": "727b05cd-fe30-4d70-a44a-361dc57e1bd8",
+          "choice": {
+            "id": "345360ab-a9f0-4824-b12e-85f3f2100ec2",
+            "name": "youtube-channel-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/YouTubeChannel Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/YouTubeChannel"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Lookup YouTubeVideo",
+      "id": "f6cf1ed1-87e5-46e4-8c1e-efd99f9918d2",
+      "commands": [
+        {
+          "name": "search-youtube",
+          "type": "UserScript",
+          "id": "6b8dc3b3-1a1d-4247-91d3-6315c75ce9cb",
+          "path": "Core/Script/search-youtube.js",
+          "settings": {
+            "API Key": "",
+            "API URL": "https://www.googleapis.com/youtube/v3",
+            "Media Type": "Video",
+            "Status (null to pick on add)": "null"
+          }
+        },
+        {
+          "name": "youtube-video-template",
+          "type": "NestedChoice",
+          "id": "3c72165f-7767-4aaf-bb24-d4bcf1b5262f",
+          "choice": {
+            "id": "6e37f7ad-ade6-4380-bb85-0cd68643b2df",
+            "name": "youtube-video-template",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Core/Template/YouTubeVideo Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:fileName}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "Database/YouTubeVideo"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "Core/Template",
+  "announceUpdates": true,
+  "version": "1.6.1",
+  "disableOnlineFeatures": true,
+  "ai": {
+    "OpenAIApiKey": "",
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true
+  }
+}

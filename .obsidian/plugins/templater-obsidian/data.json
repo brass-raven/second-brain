@@ -1,0 +1,35 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "Core/Template",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": true,
+  "shell_path": "",
+  "user_scripts_folder": "Core/Script/Templater",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "Database",
+      "template": "Core/Template/Note Template.md"
+    },
+    {
+      "folder": "Database/DailyNote",
+      "template": "Core/Template/DailyNote Template.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": false,
+  "enabled_templates_hotkeys": [
+    ""
+  ],
+  "startup_templates": [
+    ""
+  ],
+  "enable_ribbon_icon": true
+}
