@@ -6,6 +6,8 @@ It comes with scripts that allow you to quickly and easily add notes for many ty
 
 Be aware that most/all of the markdown files (except this one) will look bad in GitHub because they are using Obsidian's own markdown syntax.
 
+If you are interested in reading more about Second Brain or other Brass Raven products, please join the [discord](https://discord.gg/rcMA3M3dKZ).
+
 ## Setup
 
 1. Install [Obsidian](https://obsidian.md).
