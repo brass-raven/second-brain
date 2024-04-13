@@ -6,8 +6,10 @@ from:
   - "[[View/Note/Home|Home]]"
 order:
 ---
+# Notes
+
 ```dataview
-TABLE without id
+TABLE WITHOUT ID
   file.link as "View",
   file.path as "Path"
 FROM "View"

@@ -14,6 +14,9 @@ order:
 
 There is a file in this folder for each of the available [[#Classes|classes]].
 
+> [!note] Icons
+> When picking an icon for a class, look through [Lucide Icons](https://lucide.dev/icons/).
+
 # Classes
 
 It is recommended to read the [[View/Documentation/Metadata#Essential Metadata Information|essential metadata documentation]] prior to reading this page otherwise the below information might not make sense. Most of the below notes will be generated in the [[View/Documentation/Folders Database|Database Folder]] with the exception of base classes which should never be used on a note and the [[#View]] class which has its own [[View/Documentation/Folders View|View Folder]].
@@ -146,6 +149,14 @@ The [[Core/Class/Dialog|Dialog]] class (extends [[#Base]]) is used to store quot
 
 > [!note]- Properties
 > - `speakers`: Links to the [[#Character|Characters]] speaking during the dialog.
+
+### Meeting
+
+The [[Core/Class/Meeting|Meeting]] class (extends [[#Base]]) is used to store information about a meeting that happened (or will happen later).
+
+> [!note]- Properties
+> - `attendees`: Links to the [[#Character|Characters]] at the meeting.
+> - `date`: Link to the [[#DailyNote]] when the meeting did/will take place on.
 
 ### Movie
 

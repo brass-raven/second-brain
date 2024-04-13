@@ -62,7 +62,7 @@ You create a query section by adding a [[View/Documentation/Obsidian Syntax#Code
 - You can access properties of the current note using the `this` keyword.
 
 ```sql
-TABLE without id
+TABLE WITHOUT ID
   file.link as Link
 FROM "Database"
 WHERE
