@@ -366,11 +366,11 @@ var YoutubeService = class _YoutubeService {
       brandingSettings: {
         image: {
           bannerExternalUrl
-        }
+        } = {}
       }
     } = channel;
     return {
-      banner: bannerExternalUrl,
+      banner: bannerExternalUrl ?? "null",
       description: description ? `
 
 ${removeHtmlTags(description)}` : "",

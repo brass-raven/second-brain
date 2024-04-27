@@ -1,0 +1,31 @@
+---
+aliases:
+  - Upcoming Release
+class: View
+from:
+  - "[[View/Documentation/Release Notes|Release Notes]]"
+order:
+---
+# Notes
+
+Developed: [[Database/DailyNote/2024-04-12|2024-04-12]] - ????-??-??.
+Prior Release: [[View/Documentation/Release Notes 1.1.2|1.1.2 The `dv.view` Release]].
+Next Release: N/A.
+
+## Summary
+
+## Changes
+
+- Fix error thrown when adding [[View/Documentation/Folders Class#YouTubeChannel|YouTubeChannel]] with missing banner images.
+- Add documentation about the [[View/Documentation/Folders Class#Meeting|Meeting]] class.
+- Add release notes for older versions.
+    - [[View/Documentation/Release Notes 1.0.0|1.0.0 Initial Release]].
+    - [[View/Documentation/Release Notes 1.1.0|1.1.0 Meeting Release]].
+- Add [[View/Documentation/Appearance|Appearance]] documentation.
+- Add [[View/Documentation/Appearance#CSS Classes Snippet|CSS Classes Snippet]].
+    - Add [[View/Documentation/Appearance#No Strikethrough CSS Class|No Strikethrough CSS Class]].
+- Add [[View/Documentation/Appearance#No Strikethrough Snippet|No Strikethrough Snippet]].
+
+## Upgrading
+
+![[View/Documentation/Upgrading Versions#Copy Files]]

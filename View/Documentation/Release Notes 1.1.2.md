@@ -11,6 +11,7 @@ order:
 
 Developed: [[Database/DailyNote/2024-04-03|2024-04-03]] - [[Database/DailyNote/2024-04-06|2024-04-06]].
 Prior Release: [[View/Documentation/Release Notes 1.1.1|1.1.1 Miscellaneous Release]].
+Next Release: [[View/Documentation/Release Notes Upcoming|Upcoming Release]].
 
 ## Summary
 
