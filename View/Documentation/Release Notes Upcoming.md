@@ -17,6 +17,7 @@ Next Release: N/A.
 ## Changes
 
 - Fix error thrown when adding [[View/Documentation/Folders Class#YouTubeChannel|YouTubeChannel]] with missing banner images.
+- Change the toolbar on mobile to be more helpful.
 - Add documentation about the [[View/Documentation/Folders Class#Meeting|Meeting]] class.
 - Add release notes for older versions.
     - [[View/Documentation/Release Notes 1.0.0|1.0.0 Initial Release]].
