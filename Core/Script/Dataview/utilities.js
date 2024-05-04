@@ -47,6 +47,7 @@ function queryNotes(dataviewApi, {
   });
   let {
     number,
+    // Fallback to deprecated limit property.
     size = limit
   } = page ?? {};
   if (typeof size === "number" && size >= 0) {
