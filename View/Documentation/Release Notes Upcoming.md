@@ -27,6 +27,7 @@ Next Release: N/A.
     - Add [[View/Documentation/Appearance#No Strikethrough CSS Class|No Strikethrough CSS Class]].
 - Add [[View/Documentation/Appearance#No Strikethrough Snippet|No Strikethrough Snippet]].
 - Fix bug where [[View/Documentation/Folders Class#BookSeries|BookSeries]] was not getting the correct file names for [[View/Documentation/Folders Class#Book|Books]].
+- Add supported languages to [[View/Documentation/Obsidian Syntax#Code Block|Code Block Syntax]] documentation.
 
 ## Upgrading
 
