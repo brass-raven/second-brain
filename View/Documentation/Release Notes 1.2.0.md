@@ -1,6 +1,7 @@
 ---
 aliases:
-  - Upcoming Release
+  - 1.2.0 Miscellaneous Release
+  - Second Brain 1.2.0
 class: View
 from:
   - "[[View/Documentation/Release Notes|Release Notes]]"
@@ -10,7 +11,6 @@ order:
 
 Developed: [[Database/DailyNote/2024-04-12|2024-04-12]] - ????-??-??.
 Prior Release: [[View/Documentation/Release Notes 1.1.2|1.1.2 The `dv.view` Release]].
-Next Release: N/A.
 
 ## Summary
 
