@@ -40,3 +40,7 @@ This documentation is focused on minor improvements to my workflow that I decide
     - [[View/Documentation/Hotkeys#^openSettings|Open Obsidian settings]], then click "Appearance".
     - Scroll down to "CSS snippets".
     - Disable my scripts.
+- The [[View/Documentation/Hotkeys#^openQuickSwitcher|quick switcher]] has been configured to not show notes that have not been created yet. If you would like to undo this change, then do the following steps. ^displayMissingNotesInQuickSwitcher
+    - [[View/Documentation/Hotkeys#^openSettings|Open Obsidian settings]].
+    - Click "Quick switcher".
+    - Toggle "Show existing only" off.

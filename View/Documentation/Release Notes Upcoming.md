@@ -17,6 +17,7 @@ Next Release: N/A.
 ## Changes
 
 - Turn Vim mode off by default and add [[View/Documentation/Tips and Tricks#^enableVim|documentation to enable Vim mode]].
+- Only show existing files in the [[View/Documentation/Hotkeys#^openQuickSwitcher|quick switcher]]. If you would like to undo this change, then follow the [[View/Documentation/Tips and Tricks#^displayMissingNotesInQuickSwitcher|documentation to display missing notes in quick switcher]].
 - Add [[View/Documentation/Plugins Relative Line Number|Relative Line Number Plugin]] for those that want to use Vim.
 - Fix error thrown when adding [[View/Documentation/Folders Class#YouTubeChannel|YouTubeChannel]] with missing banner images.
 - Change the toolbar on mobile to be more helpful.
