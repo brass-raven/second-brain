@@ -16,6 +16,8 @@ Next Release: N/A.
 
 ## Changes
 
+- Turn Vim mode off by default and add [[View/Documentation/Tips and Tricks#^enableVim|documentation to enable Vim mode]].
+- Add [[View/Documentation/Plugins Relative Line Number|Relative Line Number Plugin]] for those that want to use Vim.
 - Fix error thrown when adding [[View/Documentation/Folders Class#YouTubeChannel|YouTubeChannel]] with missing banner images.
 - Change the toolbar on mobile to be more helpful.
 - Add documentation about the [[View/Documentation/Folders Class#Meeting|Meeting]] class.

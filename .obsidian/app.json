@@ -4,7 +4,7 @@
   "strictLineBreaks": false,
   "autoPairMarkdown": false,
   "useTab": false,
-  "vimMode": true,
+  "vimMode": false,
   "showLineNumber": false,
   "promptDelete": false,
   "newLinkFormat": "absolute",
