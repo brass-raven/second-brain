@@ -157,6 +157,8 @@ The [[Core/Class/Meeting|Meeting]] class (extends [[#Base]]) is used to store in
 > [!note]- Properties
 > - `attendees`: Links to the [[#Character|Characters]] at the meeting.
 > - `date`: Link to the [[#DailyNote]] when the meeting did/will take place on.
+> - `next`: Link to the [[#Meeting]] that is next in the series of meetings or was created to continue discussing the same topic.
+> - `prior`: Link to the [[#Meeting]] that is prior in the series of meetings or was the origin of why this one was created.
 
 ### Movie
 

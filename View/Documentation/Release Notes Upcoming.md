@@ -17,6 +17,7 @@ Next Release: N/A.
 ## Changes
 
 - Add `View.description` and add it to the `dv.view('parent-view')`.
+- Add `Meeting.next` & `Meeting.prior` to [[View/Documentation/Folders Class#Meeting|Meeting]].
 - Turn Vim mode off by default and add [[View/Documentation/Tips and Tricks#^enableVim|documentation to enable Vim mode]].
 - Only show existing files in the [[View/Documentation/Hotkeys#^openQuickSwitcher|quick switcher]]. If you would like to undo this change, then follow the [[View/Documentation/Tips and Tricks#^displayMissingNotesInQuickSwitcher|documentation to display missing notes in quick switcher]].
 - Add [[View/Documentation/Plugins Relative Line Number|Relative Line Number Plugin]] for those that want to use Vim.

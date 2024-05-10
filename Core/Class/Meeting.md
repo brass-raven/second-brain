@@ -15,7 +15,21 @@ fields:
       linkPath: Database/DailyNote/
     path: ""
     id: PB7NUB
-version: "2.9"
+  - name: next
+    type: File
+    options:
+      dvQueryString: dv.pages('"Database/Meeting"')
+      customRendering: page.file.name
+    path: ""
+    id: uthGv8
+  - name: prior
+    type: File
+    options:
+      dvQueryString: dv.pages('"Database/Meeting"')
+      customRendering: page.file.name
+    path: ""
+    id: FDld22
+version: "2.10"
 limit: 100
 mapWithTag: false
 icon: users
@@ -29,4 +43,6 @@ favoriteView:
 fieldsOrder:
   - gSM5Qb
   - PB7NUB
+  - uthGv8
+  - FDld22
 ---
