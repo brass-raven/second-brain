@@ -16,6 +16,7 @@ Prior Release: [[View/Documentation/Release Notes 1.1.2|1.1.2 The `dv.view` Rele
 
 ## Changes
 
+- Add a bunch of [[View/Documentation/Folders Class#View|View documentation]] for common cases since it is the most versatile and confusing [[View/Documentation/Folders Class|Class]].
 - Add `View.description` and add it to the `dv.view('parent-view')`.
 - Add `Meeting.next` & `Meeting.prior` to [[View/Documentation/Folders Class#Meeting|Meeting]].
 - Turn Vim mode off by default and add [[View/Documentation/Tips and Tricks#^enableVim|documentation to enable Vim mode]].

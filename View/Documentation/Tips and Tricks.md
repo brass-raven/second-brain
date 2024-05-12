@@ -10,7 +10,8 @@ This documentation is focused on minor improvements to my workflow that I decide
 
 # Essential Tips
 
-* When using the [[View/Documentation/Hotkeys#^addNew|add new hotkey]] you can search the options.
+* If the [[View/Documentation/Hotkeys#^addNew|add new hotkey]] does not have an option for what you are trying to add, then [[View/Documentation/Folders Class#Using `View` In Place Of A Class|use a parent view instead]].
+* When using the [[View/Documentation/Hotkeys#^addNew|add new hotkey]] you can [fuzzy search](https://en.wikipedia.org/wiki/Approximate_string_matching) the options.
     * Example: I use the hotkey, enter "yv", then hit `Enter` to create a [[View/Documentation/Folders Class#YouTubeVideo|YouTubeVideo]] note.
 * Hold command when hovering over [[View/Documentation/Obsidian Syntax#Internal Link|internal links]] to see a preview.
 * Hold command [[View/Documentation/Hotkeys#^openQuickSwitcher|when opening notes]] to open them in a new tab.
