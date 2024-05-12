@@ -27,9 +27,12 @@ It is recommended to read the [[View/Documentation/Metadata#Essential Metadata I
 
 Below is a list of class names that might be different than what you expect.
 
-* The [[#Character|Character class]] is not called `Human`/`Person` because it encapsulates pets & characters with weird races in media like an Argonian.
-* The [[#Dialog|Dialog class]] is not called quote because it encapsulates back & forth exchanges between two or more [[#Character|Characters]] while a quote is generally a single statement.
-* The [[#Term|Term class]] is not called word because it encapsulates multi-word terms like "Graphical User Interface".
+* The [[#Character|Character class]] is not called `Human`/`Person` because it encapsulates pets & characters with fictional races in media like an Argonian.
+* The [[#Dialog|Dialog class]] is not called `Quote` because it encapsulates back & forth exchanges between two or more [[#Character|Characters]] while a quote is generally a single statement.
+* The [[#Term|Term class]] is not called `Word` because it encapsulates multi-word terms like "Graphical User Interface".
+
+> [!note] Most of them have more than one option when you use the [[View/Documentation/Hotkeys#^addNew|add new note hotkey]] so you can use their actual name or the one that you might expect it to be named.
+> For example, adding a "Word" actually adds a [[#Term]].
 
 ## Class List
 
