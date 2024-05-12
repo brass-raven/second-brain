@@ -11,6 +11,7 @@ order:
 
 Developed: [[Database/DailyNote/2024-04-12|2024-04-12]] - [[Database/DailyNote/2024-05-12|2024-05-12]].
 Prior Release: [[View/Documentation/Release Notes 1.1.2|1.1.2 The `dv.view` Release]].
+Next Release: [[View/Documentation/Upcoming Release|Upcoming Release]].
 
 ## Summary
 
