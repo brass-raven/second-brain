@@ -1,6 +1,7 @@
 {
   "accentColor": "",
   "enabledCssSnippets": [
+    "css-classes",
     "embed-cleanup"
   ],
   "theme": "system"

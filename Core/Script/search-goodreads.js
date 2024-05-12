@@ -64,6 +64,7 @@ var characterMap = /* @__PURE__ */ new Map([
   [/&(#39|#x27|apos);/g, "'"],
   [/&#8217;/g, "'"],
   [/&#822[01];/g, '"'],
+  [/&amp;/g, "&"],
   [/&gt;/g, "\\>"],
   [/&lt;/g, "\\<"],
   [/​|&nbsp;/g, " "],
@@ -375,9 +376,9 @@ var GoodreadsService = class _GoodreadsService {
       _,
       seriesName
     ]) => {
-      return removeHtmlTags(seriesName);
+      return createMarkdownFileName(seriesName);
     });
-    const title = removeHtmlTags(searches.authorTitle.exec(mainContent)?.[0] ?? "");
+    const title = createMarkdownFileName(searches.authorTitle.exec(mainContent)?.[0] ?? "");
     return {
       cover,
       description: description ? `
@@ -485,7 +486,7 @@ ${description}` : "",
       seriesHeaders
     }) => {
       return series.map(({ book: { bookTitleBare: bookTitle } }, index) => {
-        bookTitle = removeHtmlTags(bookTitle);
+        bookTitle = createMarkdownFileName(bookTitle);
         const bookAlias = `${bookTitle} (${seriesHeaders[index]})`;
         return `## ${bookAlias}
 

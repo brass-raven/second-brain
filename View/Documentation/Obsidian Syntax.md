@@ -326,6 +326,7 @@ Below is a list of every type of callout. It is not nested in an example because
 ## Code Block
 
 [Official documentation](https://help.obsidian.md/Editing+and+formatting/Basic+formatting+syntax#Code%20blocks).
+[Supported languages](https://prismjs.com/#supported-languages).
 
 Code blocks let you have example code with syntax highlighting. You start them with ` ```{language} ` where `language` is the syntax highlighting you want and end them with ` ``` `. They are also used for the [[View/Documentation/Plugins Dataview|Dataview Plugin]] using special languages.
 

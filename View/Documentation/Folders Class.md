@@ -14,6 +14,9 @@ order:
 
 There is a file in this folder for each of the available [[#Classes|classes]].
 
+> [!note] Icons
+> When picking an icon for a class, look through [Lucide Icons](https://lucide.dev/icons/).
+
 # Classes
 
 It is recommended to read the [[View/Documentation/Metadata#Essential Metadata Information|essential metadata documentation]] prior to reading this page otherwise the below information might not make sense. Most of the below notes will be generated in the [[View/Documentation/Folders Database|Database Folder]] with the exception of base classes which should never be used on a note and the [[#View]] class which has its own [[View/Documentation/Folders View|View Folder]].
@@ -24,9 +27,12 @@ It is recommended to read the [[View/Documentation/Metadata#Essential Metadata I
 
 Below is a list of class names that might be different than what you expect.
 
-* The [[#Character|Character class]] is not called human/person because I wanted it to encapsulate pets and characters with weird races in media.
-* The [[#Dialog|Dialog class]] is not called quote because I wanted it to encapsulate back & forth exchanges between two or more [[#Character|Characters]].
-* The [[#Term|Term class]] is not called word because I wanted it to encapsulate multi-word phrases.
+* The [[#Character|Character class]] is not called `Human`/`Person` because it encapsulates pets & characters with fictional races in media like an Argonian.
+* The [[#Dialog|Dialog class]] is not called `Quote` because it encapsulates back & forth exchanges between two or more [[#Character|Characters]] while a quote is generally a single statement.
+* The [[#Term|Term class]] is not called `Word` because it encapsulates multi-word terms like "Graphical User Interface".
+
+> [!note] Most of them have more than one option when you use the [[View/Documentation/Hotkeys#^addNew|add new note hotkey]] so you can use their actual name or the one that you might expect it to be named.
+> For example, adding a "Word" actually adds a [[#Term]].
 
 ## Class List
 
@@ -147,6 +153,16 @@ The [[Core/Class/Dialog|Dialog]] class (extends [[#Base]]) is used to store quot
 > [!note]- Properties
 > - `speakers`: Links to the [[#Character|Characters]] speaking during the dialog.
 
+### Meeting
+
+The [[Core/Class/Meeting|Meeting]] class (extends [[#Base]]) is used to store information about a meeting that happened (or will happen later).
+
+> [!note]- Properties
+> - `attendees`: Links to the [[#Character|Characters]] at the meeting.
+> - `date`: Link to the [[#DailyNote]] when the meeting did/will take place on.
+> - `next`: Link to the [[#Meeting]] that is next in the series of meetings or was created to continue discussing the same topic.
+> - `prior`: Link to the [[#Meeting]] that is prior in the series of meetings or was the origin of why this one was created.
+
 ### Movie
 
 The [[Core/Class/Movie|Movie]] class (extends [[#BaseOmdb]]) is used to store information about a Movie. Scripts pull data from OMDB APIs.
@@ -209,20 +225,22 @@ The [[Core/Class/VideoGameSeries|VideoGameSeries]] class (extends [[#BaseWebTask
 
 ### View
 
-The [[Core/Class/View|View]] class (extends [[#Base]]) is used for general notes that do not fall under one of the other classes and should be stored in the [[View/Documentation/Folders View|View Folder]] .
+The [[Core/Class/View|View]] class (extends [[#Base]]) is the most versatile class used for general notes that do not fall under one of the other classes & interlinking notes. They should be stored in the [[View/Documentation/Folders View|View Folder]] , but you will generally be adding to the [[View/Documentation/Folders View Notes|View Notes Folder]] specifically unless you are adding extra queries for other classes.
 
-In addition to storing general notes they are used to interlink and/or query other notes throughout the vault.
+> [!note]- Properties
+> - `description`: Description of the note to display next to its name when displayed in a [[#Parent View]].
+> - `order`: Priority number (higher numbers at the top) to determine where the note displays in a [[#Parent View]] (default: `0`). ^viewOrderProperty
 
 #### Query View
 
-Query views are where I place my [[View/Documentation/Plugins Dataview|Dataview Plugin]] queries.
+Query views are where [[View/Documentation/Plugins Dataview|Dataview Plugin]] queries belong.
 
-When I query notes for a specific class I place it in the [[View/Documentation/Folders View|View Folder]] under a subfolder named after the class I am querying.
+When querying notes for a specific class place it in the [[View/Documentation/Folders View|View Folder]] under a subfolder named after the class it is querying.
 
 > [!example]-
 > You could create a `To Do` note under the `Book` subfolder of the [[View/Documentation/Folders View|View Folder]] to track the books you have yet to finish. In fact, the [[View/Book/To Do|Books To Read]] view is already made for you.
 
-When I made a more general query that selects data across multiple classes, I put it under the [[View/Documentation/Folders View Notes|View Notes Folder]] with my [[#General View]] notes.
+When making a more general query that selects data across multiple classes, put it under the [[View/Documentation/Folders View Notes|View Notes Folder]] with your [[#General View]] & [[#Parent View]] notes.
 
 #### General View
 
@@ -231,7 +249,7 @@ General view notes can be created in the [[View/Documentation/Folders View Notes
 They are the same as [[#Parent View]] notes, but their template does not have the subviews section since not all views have collections of views under them.
 
 > [!example]-
-> I added a `View/Note/Acronyms` note to contain a table of acronyms and what they stand for.
+> You could create a `View/Note/Acronyms` note to contain a table of acronyms and what they stand for.
 
 #### Parent View
 
@@ -243,6 +261,63 @@ They are the same as [[#General View]] notes, but their template has a subviews 
 > You could create a view for each subject you want to learn about and link them all back to a `Learning` view to access them all from one place.
 >
 > When a subject view gets too large, split it up into multiple views that you reference from the original subject view.
+
+##### Using `View` In Place Of A Class
+
+When you need to create notes for something that does not have a class yet, it is recommended to create a [[#Parent View]] for the missing class, then create a [[#General View]] note for each instance note that would usually go into the [[View/Documentation/Folders Database|Database Folder]]. If you find yourself creating a ton of entries under this parent view, it may make sense to create a new class for yourself or request for the class to be added to this vault on the [Brass Raven Discord](https://discord.gg/rcMA3M3dKZ) or the [Second Brain repository](https://github.com/brass-raven/second-brain/issues).
+
+> [!example]-
+> If you want to take notes on different plants that you want to add to your garden, you could create a "Plants" [[#Parent View]], then create a "Jalapeno" [[#General View]] note with its [[View/Documentation/Metadata#From Property|from Metadata]] pointing to the "Plants" note like the below code shows.
+> ```md
+> from:
+>   - "[[View/Note/Plants|Plants]]"
+> ```
+>
+> This would cause the "Jalapeno" note to show up in the "Plants" note under its "Subviews" section.
+
+##### Subview Query
+
+When a parent view selects other views to display under its "Subviews" section it does so by looking for views that have the parent view under its [[View/Documentation/Metadata#From Property|from Metadata]].
+
+If you want a [[#View]] ([[#General View]] or [[#Parent View]]) to display under multiple [[#Parent View|Parent Views]], you just need to add all of them under its [[View/Documentation/Metadata#From Property|from Metadata]].
+
+> [!example]-
+> If you want a [[#View]] to display under the "Subviews" section in both the "Entertainment" & "Learning" [[#Parent View|Parent Views]], then set its [[View/Documentation/Metadata#From Property|from Metadata]] like so.
+> ```md
+> from:
+>   - "[[View/Note/Entertainment|Entertainment]]"
+>   - "[[View/Note/Learning|Learning]]"
+> ```
+
+If you use [[View/Documentation/Metadata#Aliases Property|aliases Metadata]] in [[#View|Views]] that show up in [[#Parent View|Parent Views]] you will see that they use the top alias as their display name instead of the actual note name. If you would prefer to see the note's actual name, then use that as its first alias.
+
+> [!example]-
+> If you want a [[#View]] named "Gardening" to display as "Gardening" in [[#Parent View|Parent Views]], but still have the alias "Plants", then use the following as its [[View/Documentation/Metadata#Aliases Property|aliases Metadata]].
+> ```md
+> aliases:
+>   - Gardening
+>   - Plants
+> ```
+
+If you want a [[#Parent View]] to display notes other than other [[#View|Views]], then you can change the `source` of the query to point to another folder or tag and it will pull notes from that location so long as the [[View/Documentation/Metadata#From Property|from Metadata]] is set appropriately.
+
+> [!example]-
+> If you want to pull [[#Meeting]] notes instead of [[#View]] notes, then use the following query.
+> ```md
+> await dv.view('subview-table', {
+>   source: '"Database/Meeting"'
+> });
+> ```
+
+If you want a [[#Parent View]] to display sub note names in descending order instead of ascending order, then add `nameOrder: 'desc'` to the query instead of setting [[#^viewOrderProperty|the order property on each child note]].
+
+> [!example]-
+> If you have views that are prefixed with a date and you want them to display from latest to oldest, then use the following query.
+> ```md
+> await dv.view('subview-table', {
+>   nameOrder: 'desc'
+> });
+> ```
 
 ### YouTubeChannel
 

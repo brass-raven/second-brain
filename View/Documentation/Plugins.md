@@ -20,5 +20,6 @@ In addition to being a great out of the box note taking solution Obsidian also a
 - [[View/Documentation/Plugins Excalidraw|Excalidraw Plugin]].
 - [[View/Documentation/Plugins Metadata Menu|Metadata Menu Plugin]].
 - [[View/Documentation/Plugins QuickAdd|QuickAdd Plugin]].
+- [[View/Documentation/Plugins Relative Line Number|Relative Line Number Plugin]].
 - [[View/Documentation/Plugins Templater|Templater Plugin]].
 - [[View/Documentation/Plugins Workspaces|Workspaces Plugin]].

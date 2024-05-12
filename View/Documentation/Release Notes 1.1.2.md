@@ -1,12 +1,17 @@
 ---
 aliases:
   - 1.1.2 The `dv.view` Release
+  - Second Brain 1.1.2
 class: View
 from:
   - "[[View/Documentation/Release Notes|Release Notes]]"
 order:
 ---
 # Notes
+
+Developed: [[Database/DailyNote/2024-04-03|2024-04-03]] - [[Database/DailyNote/2024-04-06|2024-04-06]].
+Prior Release: [[View/Documentation/Release Notes 1.1.1|1.1.1 Miscellaneous Release]].
+Next Release: [[View/Documentation/Release Notes 1.2.0|1.2.0 Miscellaneous Release]].
 
 ## Summary
 
@@ -16,8 +21,10 @@ If you want to see the specific files that were changed, the check out the [rele
 
 ## Changes
 
-- Add `subview-table` Dataview View to find all [[View/Documentation/Folders Class#View|Views]] under a [[View/Documentation/Folders Class#Parent View|Parent View]].
-- Add `task-table` Dataview View to query notes that extend [[View/Documentation/Folders Class#BaseTask|BaseTask]].
+- Add [[View/Documentation/Plugins Dataview#Views|Dataview Views]].
+    - Note: This change fixes the [[View/Documentation/Known Issues|Known Issue]] where views like [[View/Book/To Do|Books To Read]] would not work on mobile devices.
+    - Add `subview-table` Dataview View to find all [[View/Documentation/Folders Class#View|Views]] under a [[View/Documentation/Folders Class#Parent View|Parent View]].
+    - Add `task-table` Dataview View to query notes that extend [[View/Documentation/Folders Class#BaseTask|BaseTask]].
 - Fill in missing [[View/Documentation/Folders View|View Folder]] subfolders for various [[View/Documentation/Folders Class|Classes]].
     - Add `Article` folder and [[View/Note/Article|Article]] parent view for [[View/Documentation/Folders Class#Article|Article]] queries.
     - Add `Author` folder (added to [[View/Note/Book|Book]] parent view) for [[View/Documentation/Folders Class#Author|Author]] queries.

@@ -1,5 +1,12 @@
 "use strict";
 
+// src/libs/array/filter-null.ts
+function filterNull(items) {
+  return items.filter((item) => {
+    return item != null;
+  });
+}
+
 // src/libs/obsidian/constants/task-status.ts
 var TaskStatus = /* @__PURE__ */ ((TaskStatus2) => {
   TaskStatus2["blocked"] = "Blocked";
@@ -42,21 +49,27 @@ var mediaTypeBackMap = /* @__PURE__ */ new Map([
 
 // src/scripts/Dataview/subview-table.ts
 var current = dv.current();
+var pages = dv.pages(input?.source ?? '"View"').filter((page) => {
+  return page.from?.some((link) => {
+    return link.path === current.file.path;
+  });
+});
+var displayDiscription = pages.some((page) => {
+  return page.description;
+});
 dv.table(
-  [
-    "Name"
-  ],
-  dv.pages(input?.source ?? '"View"').filter((page) => {
-    return page.from?.some((link) => {
-      return link.path === current.file.path;
-    });
-  }).sort((page) => {
+  filterNull([
+    "Name",
+    displayDiscription ? "Description" : null
+  ]),
+  pages.sort((page) => {
     return page.order ?? 0;
   }, "desc" /* desc */).sort((page) => {
     return getNoteName(page);
   }, input?.nameOrder ?? "asc" /* asc */).map((page) => {
-    return [
-      `[[${page.file.path}|${getNoteName(page)}]]`
-    ];
+    return filterNull([
+      `[[${page.file.path}|${getNoteName(page)}]]`,
+      displayDiscription ? page.description ?? "" : null
+    ]);
   })
 );

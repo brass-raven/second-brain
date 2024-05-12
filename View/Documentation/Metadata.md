@@ -45,7 +45,7 @@ Some properties link [[#Aliases Property|aliases]] & [[#Tags Property|tags]] are
 
 #### Aliases Property
 
-The `aliases` property allows you to give a note alternative names that you can use when you [[View/Documentation/Hotkeys#^openQuickSwitcher|open the quick switcher]] and [[View/Documentation/Obsidian Syntax#Internal Link|make an internal link]].
+The `aliases` property is built into Obsidian and allows you to give a note alternative names that you can use when you [[View/Documentation/Hotkeys#^openQuickSwitcher|open the quick switcher]] and [[View/Documentation/Obsidian Syntax#Internal Link|make an internal link]].
 
 In the below example I use the `aliases` property to make it easy to find & link to my `Two-Factor Authentication` note using its alternative name `Multi-Factor Authentication` or either of its two acronyms `2FA` or `MFA`.
 
@@ -62,10 +62,26 @@ In the below example I use the `aliases` property to make it easy to find & link
 
 #### Class Property
 
-There is a special `class` property used by the [[View/Documentation/Plugins Metadata Menu|Metadata Menu Plugin]] which is used to determine which properties a note should have. See [[View/Documentation/Folders Class|Classes]] for documentation on the available classes and documentation on some of the properties they provide.
+There is a special `class` property built into the [[View/Documentation/Plugins Metadata Menu|Metadata Menu Plugin]] which is used to determine which properties a note should have. See [[View/Documentation/Folders Class|Classes]] for documentation on the available classes and documentation on some of the properties they provide.
 
 > [!note]
 > Classes prefixed with `Base` are to be extended by other classes and should never be directly set on a note. ^330dac
+
+#### CSS Class Property
+
+The `cssclass` property is built into Obsidian and allows you to add special appearance/styling rules to a single note.
+
+In the below example I use the `cssclass` property to make the note no longer strikethrough completed tasks so I can easily see what the checked items are. For a full list of available classes, see [[View/Documentation/Appearance#CSS Classes|CSS Classes]].
+
+> [!example]-
+> ##### Syntax
+> ```md
+> ---
+> cssclass: cssNoStrike
+> ---
+> ```
+
+^cssClassPropertyExample
 
 #### From Property
 
@@ -86,7 +102,7 @@ The `from` property links to note(s) that made you create this note. This is pro
 
 #### Tags Property
 
-The `tags` property gives you an easy way to group notes. I have been using camel case for my tags and have listed some below that my scripts make use of.
+The `tags` property is built into Obsidian and gives you an easy way to group notes. I have been using camel case for my tags and have listed some below that my scripts make use of.
 
 ##### Abandoned Tag
 

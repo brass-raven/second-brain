@@ -1,12 +1,12 @@
 ---
 aliases:
-banner: "{{VALUE:banner}}"
+banner: {{VALUE:banner}}
 class: YouTubeChannel
-cover: "{{VALUE:thumbnail}}"
+cover: {{VALUE:thumbnail}}
 from:
 rating:
 tags:
-url: "{{VALUE:url}}"
+url: {{VALUE:url}}
 ---
 # Notes
 

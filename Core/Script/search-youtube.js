@@ -64,6 +64,7 @@ var characterMap = /* @__PURE__ */ new Map([
   [/&(#39|#x27|apos);/g, "'"],
   [/&#8217;/g, "'"],
   [/&#822[01];/g, '"'],
+  [/&amp;/g, "&"],
   [/&gt;/g, "\\>"],
   [/&lt;/g, "\\<"],
   [/​|&nbsp;/g, " "],
@@ -366,11 +367,11 @@ var YoutubeService = class _YoutubeService {
       brandingSettings: {
         image: {
           bannerExternalUrl
-        }
+        } = {}
       }
     } = channel;
     return {
-      banner: bannerExternalUrl,
+      banner: bannerExternalUrl ?? "null",
       description: description ? `
 
 ${removeHtmlTags(description)}` : "",

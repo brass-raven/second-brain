@@ -5,13 +5,12 @@ class: View
 from:
   - "[[View/Documentation/README|README]]"
 order:
-path: "[[Database/DailyNote/2024-04-04]]"
 ---
 # Notes
 
 ## Latest Release
 
-![[View/Documentation/Release Notes 1.1.2]]
+![[View/Documentation/Release Notes 1.2.0]]
 
 ## All Releases
 
