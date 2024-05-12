@@ -9,7 +9,7 @@ order:
 ---
 # Notes
 
-Developed: [[Database/DailyNote/2024-04-12|2024-04-12]] - ????-??-??.
+Developed: [[Database/DailyNote/2024-04-12|2024-04-12]] - [[Database/DailyNote/2024-05-12|2024-05-12]].
 Prior Release: [[View/Documentation/Release Notes 1.1.2|1.1.2 The `dv.view` Release]].
 
 ## Summary
