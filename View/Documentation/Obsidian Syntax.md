@@ -334,7 +334,7 @@ Code blocks let you have example code with syntax highlighting. You start them w
 
 > [!note] If you need to add ` ``` ` inside of a code block, then you can add extra backticks to the outer code block (I learned this while creating the below example).
 
-> [!example]
+> [!example]-
 > ##### Syntax
 > ````md
 > ```ts
