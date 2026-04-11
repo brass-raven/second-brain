@@ -13,20 +13,30 @@ If you are interested in reading more about Second Brain or other Brass Raven pr
 1. Install [Obsidian](https://obsidian.md).
     - You can use [brew to install Obsidian](https://formulae.brew.sh/cask/obsidian#default) if you prefer.
 2. Open a [git](https://git-scm.com) capable terminal.
-3. Clone the repository to where you want your notes kept.
-    - I stored mine in iCloud to sync my vault between my Mac & iPhone. To do the same, do the following steps before continuing.
-        1. Open the Obsidian app on your iPhone, create a new vault, check "Store in iCloud", click "Create", and close the app.
-            - I think you could run the below command in Terminal on your Mac instead, but I am unable to test it since I already created my vault (let me know if it works for you).
-            1. `mkdir -pv "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents"`
-        2. Open Terminal on your Mac.
-        3. `cd "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents"`
-        4. `rm -rf second-brain`
-            - Replace `second-brain` at the end if you want a different vault name.
-            - Skip this step if you ran `mkdir` earlier instead of creating the vault on your iPhone.
-    1. `git clone https://github.com/brass-raven/second-brain.git second-brain`
-        - Replace `second-brain` at the end (but on the one in the URL) if you want a different vault name.
-3. Open Obsidian.
-4. Click "Open folder as vault".
-5. Navigate to where you cloned the repository and open the vault.
-6. The first time you open the vault you should get a message about trusting the author. If you do, then select "Trust author and enable plugins".
-7. Click the pencil icon on the left side bar to enable the "Edit Workspace" and open the "Quickstart" documentation that I recommend reading before using Second Brain in Obsidian.
+3. Clone the repository to where you want your notes kept. I recommend starting with something like iCloud that you can sync between your laptop & phone for free, then upgrade to [Obsidian Sync](https://obsidian.md/sync) once you know you like it so you can get version history on your notes.
+    - iCloud setup:
+        1. Create an empty vault to add second-brain to.
+            - On iOS:
+                1. Open the Obsidian app.
+                2. create a new vault (name it whatever you want, but remember the name for future steps).
+                3. check "Store in iCloud".
+                4. Click "Create" & close the app.
+            - On MacOS: I think you could run the below command in Terminal on your Mac instead, but I am unable to test it since I already created my vault (let me know if it works for you so we can fix it or remove this disclaimer 😁).
+                1. `mkdir -pv "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents"`
+        2. Use Git to add second-brain to your vault.
+            - On MacOS:
+                1. Open Terminal.
+                2. `cd "$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents"`
+                3. `rm -rf 'second-brain'` (skip this step if you created the empty vault on MacOS).
+                    - Replace `second-brain` at end of this command with whatever vault name you used.
+                4. `git clone https://github.com/brass-raven/second-brain.git 'second-brain'`
+                    - Leave `second-brain.git` alone, but replace `second-brain` at end of this command with whatever vault name you used.
+4. Open Obsidian.
+5. Click "Open folder as vault".
+6. Navigate to where you cloned the repository and open the vault.
+7. The first time you open the vault you should get a message about trusting the author. If you do, then select "Trust author and enable plugins".
+8. Click the pencil icon on the left side bar to enable the "Edit Workspace" and open [Quickstart](./View/Documentation/Quickstart.md) (warning: written for Obsidian, so the linked content will display poorly in GitHub) that I recommend reading before using Second Brain in Obsidian.
+
+## Roadmap
+
+I have an ongoing [list of improvements](./View/Documentation/Second%20Brain%20Improvements.md) (warning: written for Obsidian, so the linked content will display poorly in GitHub), but presently my focus is on rewriting Second Brain from the ground up for v2.0.0. Do not worry, as part of that work I am making an automatic migrator to go from older versions of Second Brain (or maybe even non-Second Brain vaults).
